@@ -5,6 +5,8 @@
     <title>Imobiliária Açores</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
   </head>
   <body>
     <div id="top-bar">
@@ -17,6 +19,9 @@
         <button type="button" id="btn-registo" name="registo">registo</button>
       </div>
     </div>
+
+    <div id="map"></div>
+    
     <form class="filter-box" action="index.php" method="post">
       <input type="text" name="" value="" placeholder="imóveis em destaque">
       <input type="text" name="" value="" placeholder="finalidade">
@@ -28,6 +33,5 @@
       <input type="text" name="" value="" placeholder="tipologia">
       <input type="checkbox" name="" value="" placeholder="">
     </form>
-    <iframe id="mapa" src="mapa.php"></iframe>
   </body>
 </html>
