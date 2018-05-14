@@ -1,6 +1,6 @@
 <?php
 
-class Database extends PDO {
+Abstract class Database extends PDO {
 	
 	#atributos de configuração
 	private $driver;
