@@ -85,25 +85,7 @@ Abstract class Database extends PDO {
 			$this->error = "Query ou parâmetros inválidos";
 			return null;
 		}
-    }
-
-
-    public function existsEmail($email){
-
-		$sql = "SELECT COUNT(*) FROM utilizador WHERE email = ?";
-
-		$stmt = $this->conn->prepare($sql);
-		$stmt->bindValue(1, $email);
-		$stmt->execute();
-
-		$result = $stmt->fetch();
-		if ($result[0] == 0)
-			return 'false';
-		else
-			return 'true';
-	}
-
-
+    }    
 }
 
 
