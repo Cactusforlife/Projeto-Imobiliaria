@@ -28,6 +28,7 @@ body {
   margin-left: 20px;
 }
 
+/* BOX SESSION*/
 #session-box {
   margin-right: 20px;
 }
@@ -47,6 +48,59 @@ body {
   color: #ffffff;
   background-color: #222222;
 }
+
+.modal-login {
+  z-index: 3000;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color:rgba(0, 0, 0, 0.7);
+  position: fixed;
+  display: none;
+  margin:auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.modal-login form {
+  position: relative;
+  width: 50vw;
+  height: 60vh;
+  background-color:white;
+}
+
+#close-modal-login {
+  position: absolute;
+  right: 0;
+}
+
+.modal-register {
+  z-index: 3000;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color:rgba(0, 0, 0, 0.7);
+  position: fixed;
+  display: none;
+  margin:auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.modal-register form {
+  position: relative;
+  width: 50vw;
+  height: 60vh;
+  background-color:white;
+}
+
+#close-modal-register {
+  position: absolute;
+  right: 0;
+}
+/* FIM BOX SESSION*/
 
 #map {
   height: 100%;
