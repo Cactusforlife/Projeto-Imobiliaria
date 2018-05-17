@@ -1,26 +1,28 @@
+/*INDEX BACKEND*/
+  /*SISTEMA DE LOGIN BACKEND*/
+  .backend_container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-/*Sistema de login do backend*/
-.backend_container {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+  .login_backend form{
+    background-color: #222222;
+    width: 50vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /*FIM SISTEMA DE LOGIN BACKEND*/
+/*FIM SISTEMA DE LOGIN BACKEND*/
 
-.login_backend form{
-  background-color: #222222;
-  width: 50vw;
-  height: 60vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-/*Fim sistema de login do backend*/
-
-/* Sistem a administração */
+/*GERAL BACKEND*/
+  /*NAV BACKEND*/
   .nav_backend {
     display: flex;
     width: 100%;
@@ -29,7 +31,6 @@
   }
   .nav_backend button {
     border: 0;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,3 +38,5 @@
     flex-grow: 1;
     display: flex;
   }
+  /*FIM NAV BACKEND*/
+/*FIM GERAL BACKEND*/
