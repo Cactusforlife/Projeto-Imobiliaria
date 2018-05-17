@@ -9,4 +9,4 @@ $(document).ready(function() {
         }
       });
       $( "#amount" ).val( "$" + $( "#slider-range-min" ).slider( "value" ) );
-}); 
+});
