@@ -194,8 +194,28 @@ INSERT INTO freguesia (id_conselho,nome,latitude,longitude) VALUES
 ('Urzelina',12,38.6524546,-28.1461144),
 ('Velas',12,38.6840593,-28.2307167),
 
-/*Freguesias do concelho da da ilha da Pico*/
+/*Freguesias do concelho das Lajes do Pico da ilha da Pico*/
 
-('Lajes do Pico',6,38.3956911,-28.2450343),
-('Madalena',6,38.5321849,-28.5380603),
-('São Roque do Pico',6,38.5166417,-28.3182478),
+('Calheta de Nesquim',13,38.4035464,-28.0874276),
+('Lajes do Pico',13,38.3956575,-28.2450343),
+('Piedade',13,38.4273363,-28.062526),
+('Ribeiras',13,38.4045553,-28.1918514),
+('Ribeirinha',13,37.8269544,-25.5050398),
+('São João',13,38.4159381,-28.3422375),
+
+/*Freguesias do concelho da Madalena da ilha da Pico*/
+
+('Bandeiras',14,38.5379193,-28.4692454),
+('Candelária',14,38.4644763,-28.5209047),
+('Criação Velha',14,38.5105557,-28.5300028),
+('Madalena',14,38.5321513,-28.5380603),
+('São Caetano',14,38.4275544,-28.4329606),
+('São Mateus',14,38.4316643,-28.466338),
+
+/*Freguesias do concelho das São Roque do Pico da ilha da Pico*/
+
+('Prainha',15,38.4726241,-28.211099),
+('Santa Luzia',15,38.547192,-28.4003341),
+('Santo Amaro',15,38.4548569,-28.1789983),
+('Santo António',15,38.5352254,-28.3454776),
+('São Roque do Pico',15,38.5166249,-28.3182478),
