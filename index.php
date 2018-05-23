@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
   </head>
   <body>
     <div id="top-bar">
@@ -59,40 +61,44 @@
     <div id="map"></div>
 
     <form class="filter-box" action="index.php" method="post">
-      <select type="text" name="ilha">
-
+      <select type="text" name="ilha" class="filtros">
+        <option class="" name="select-ilha" selected disabled>
+          Selecione a ilha
+        </option>
         <option class="" name="saomiguel">
           São Miguel
         </option>
-        <option class="" name="saomiguel">
+        <option class="" name="santamaria">
           Santa Maria
         </option>
-        <option class="" name="saomiguel">
+        <option class="" name="terceira">
           Terceira
         </option>
-        <option class="" name="saomiguel">
+        <option class="" name="pico">
           Pico
         </option>
-        <option class="" name="saomiguel">
+        <option class="" name="saojorge">
           São Jorge
         </option>
-        <option class="" name="saomiguel">
+        <option class="" name="faial">
           Faial
         </option>
-        <option class="" name="saomiguel">
+        <option class="" name="graciosa">
           Graciosa
         </option>
-        <option class="" name="saomiguel">
+        <option class="" name="flores">
           Flores
         </option>
-        <option class="" name="saomiguel">
+        <option class="" name="corvo">
           Corvo
         </option>
 
       </select>
 
-      <select type="text" name="concelho">
-
+      <select type="text" name="concelho" class="filtros">
+        <option class="" name="select-concelho" selected disabled>
+          Selecione o concelho
+        </option>
         <option class="" name="saomiguel">
           Ponta Delgada
         </option>
@@ -123,8 +129,10 @@
 
       </select>
 
-      <select type="text" name="freguesia">
-
+      <select type="text" name="freguesia" class="filtros">
+        <option class="" name="select-freguesia" selected disabled>
+          Selecione a freguesia
+        </option>
         <option class="" name="saomiguel">
           São Roque
         </option>
@@ -155,8 +163,10 @@
 
       </select>
 
-      <select type="text" name="finalidade">
-
+      <select type="text" name="finalidade" class="filtros">
+        <option class="" name="select-finalidade" selected disabled>
+          Selecione a sua finalidade
+        </option>
         <option class="" name="compra">
           Comprar
         </option>
@@ -166,41 +176,64 @@
 
       </select>
 
-      <select type="text" name="tipo_imovel">
-
-        <option class="" name="compra">
+      <select type="text" name="tipo_imovel" class="filtros">
+        <option class="" name="select-tipo-imovel" selected disabled>
+          Selecione o tipo de imóvel
+        </option>
+        <option class="" name="moradia">
           Moradia
         </option>
-        <option class="" name="arrenda">
-          Arrendar
+        <option class="" name="apartamento">
+          Apartamento
+        </option>
+        <option class="" name="quinta">
+          Quinta
+        </option>
+        <option class="" name="terreno">
+          Terreno
+        </option>
+        <option class="" name="armazem">
+          Armazem
         </option>
 
       </select>
 
-      <select type="text" name="tipologias">
-
-        <option class="" name="compra">
+      <select type="text" name="tipologias" class="filtros">
+        <option class="" name="select-finalidade" selected disabled>
+          Selecione a tipologia
+        </option>
+        <option class="" name="t1">
           T1
         </option>
-        <option class="" name="arrenda">
-          Arrendar
+        <option class="" name="t2">
+          T2
         </option>
-
       </select>
-      <label for="">Nº Cozinhas</label> <input type="number" name="" value="">
-      <label for="">Nº WC</label> <input type="number" name="" value="">
-      <label for="">Garagem</label> <input type="checkbox" name="" value="">
 
-      <p>
-        <label for="amount">Preço</label>
-        <input type="text" id="amount" readonly style="border:0;">
-      </p>
+      <div class="filtros">
+        <label for="">Nº Cozinhas</label>
+        <input type="number" name="" value="">
+      </div>
 
-      <div id="slider-range-min"></div>
+      <div class="filtros">
+        <label for="">Nº WC</label>
+        <input type="number" name="" value="">
+      </div>
+
+      <div class="filtros">
+        <label for="">Garagem</label>
+        <input type="checkbox" name="" value="">
+      </div>
+
+      <div class="filtros">
+        <label id="preco" name="preco" for="preco">Preço</label>
+        <input type="range" min="0" max="2000000" value="0" class="slider" id="myRange">
+      </div>
+
+      <input type="submit" name="pesquisar" value="pesquisa">
     </form>
   </body>
   <script type="text/javascript" src="js/main.js"></script>
   <script type="text/javascript" src="js/session.js"></script>
-  <script type="text/javascript" src="js/features.js"></script>
 
 </html>
