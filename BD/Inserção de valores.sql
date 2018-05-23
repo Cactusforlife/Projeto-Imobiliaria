@@ -151,9 +151,51 @@ INSERT INTO freguesia (id_conselho,nome,latitude,longitude) VALUES
 ('Santa Luzia',8,38.6606963,-27.2294146),
 ('São Mateus da Calheta',8,38.6640831,-27.2862953),
 ('São Bento',8,38.6606726,-27.2132604),
-('São Pedro',8,38.6575,-27.229722s),
-('Sé',8,),
-('Serreta',8,),
-('Terra chá',8,),
-('Vila de São Sebastião',8,),
+('São Pedro',8,38.6575,-27.229722),
+('Sé',8,38.655556,-27.221111),
+('Serreta',8,38.7458827,-27.3744535),
+('Terra chá',8,38.6722653,-27.2610231),
+('Vila de São Sebastião',8,38.6676548,-27.0953112),
 
+/*Freguesias do concelho da Praia da Victoria da ilha de Terceira*/
+('Agualva',9,38.7755317,-27.1706994),
+('Biscoitos',9,38.7918906,-27.2601271),
+('Cabo da Praia',9,38.7052642,-27.0593325),
+('Fonte do Bastardo',9,38.6920007,-27.0948634),
+('Fontinhas',9,38.738995,-27.1221104),
+('Lajes',9,38.761401,-27.113382),
+('Porto Martins',9,38.6814663,-27.0819512),
+('Santa Cruz',9,38.7305567,-27.0750549),
+('Quatro Ribeiras',9,38.7879601,-27.2313523),
+('São Brás',9,38.7637656,-27.1365565),
+('Vila Nova',9,38.7801435,-27.1589442),
+
+/*Freguesias do concelho da Santa Cruz da Graciosa da ilha da Graciosa*/
+
+('Santa Cruz da Graciosa',10,39.051667,-28.012222),
+('São Mateus',10,39.0471171,-27.9864908),
+('Guadalupe',10,39.0613808,-28.0378391),
+('Luz',10,39.0235218,-28.0014843),
+
+/*Freguesias do concelho da Calheta da ilha da São Jorge*/
+
+('Calheta',11,38.6,-27.95),
+('Norte Pequeno',11,38.648889,-28.001389),
+('Ribeira Seca',11,38.602222,-28.005),
+('Santo Antão',11,38.602222,-28.005),
+('Vila do Topo',11,38.549167,-27.7675),
+
+/*Freguesias do concelho das Velas da ilha da São Jorge*/
+
+('Manadas',12,38.6342372,-28.1062138),
+('Norte Grande',12,38.673349,-28.0739096),
+('Rosais',12,38.7187162,-28.26087),
+('Santo Amaro',12,38.6805846,-28.1949306),
+('Urzelina',12,38.6524546,-28.1461144),
+('Velas',12,38.6840593,-28.2307167),
+
+/*Freguesias do concelho da da ilha da Pico*/
+
+('Lajes do Pico',6,38.3956911,-28.2450343),
+('Madalena',6,38.5321849,-28.5380603),
+('São Roque do Pico',6,38.5166417,-28.3182478),
