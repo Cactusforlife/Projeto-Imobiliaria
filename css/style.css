@@ -157,7 +157,6 @@ div.filtros {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: red;
 }
 
 div.filtros label {
@@ -166,10 +165,6 @@ div.filtros label {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-div.filtros input {
-  width: 50%;
 }
 
 /*FIM MAPA E SUA PESQUISA*/

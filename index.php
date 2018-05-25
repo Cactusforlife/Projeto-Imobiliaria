@@ -61,108 +61,110 @@
     <div id="map"></div>
 
     <form class="filter-box" action="index.php" method="post">
-      <select type="text" name="ilha" class="filtros">
-        <option class="" name="select-ilha" selected disabled>
-          Selecione a ilha
-        </option>
-        <option class="" name="saomiguel">
-          São Miguel
-        </option>
-        <option class="" name="santamaria">
-          Santa Maria
-        </option>
-        <option class="" name="terceira">
-          Terceira
-        </option>
-        <option class="" name="pico">
-          Pico
-        </option>
-        <option class="" name="saojorge">
-          São Jorge
-        </option>
-        <option class="" name="faial">
-          Faial
-        </option>
-        <option class="" name="graciosa">
-          Graciosa
-        </option>
-        <option class="" name="flores">
-          Flores
-        </option>
-        <option class="" name="corvo">
-          Corvo
-        </option>
+      <div class="arquipelago">
+        <select type="text" name="ilha" class="filtros" id="ilha">
+          <option class="" name="select-ilha" selected disabled>
+            Selecione a ilha
+          </option>
+          <option class="" name="saomiguel">
+            São Miguel
+          </option>
+          <option class="" name="santamaria">
+            Santa Maria
+          </option>
+          <option class="" name="terceira">
+            Terceira
+          </option>
+          <option class="" name="pico">
+            Pico
+          </option>
+          <option class="" name="saojorge">
+            São Jorge
+          </option>
+          <option class="" name="faial">
+            Faial
+          </option>
+          <option class="" name="graciosa">
+            Graciosa
+          </option>
+          <option class="" name="flores">
+            Flores
+          </option>
+          <option class="" name="corvo">
+            Corvo
+          </option>
 
-      </select>
+        </select>
 
-      <select type="text" name="concelho" class="filtros">
-        <option class="" name="select-concelho" selected disabled>
-          Selecione o concelho
-        </option>
-        <option class="" name="saomiguel">
-          Ponta Delgada
-        </option>
-        <option class="" name="saomiguel">
-          Santa Maria
-        </option>
-        <option class="" name="saomiguel">
-          Terceira
-        </option>
-        <option class="" name="saomiguel">
-          Pico
-        </option>
-        <option class="" name="saomiguel">
-          São Jorge
-        </option>
-        <option class="" name="saomiguel">
-          Faial
-        </option>
-        <option class="" name="saomiguel">
-          Graciosa
-        </option>
-        <option class="" name="saomiguel">
-          Flores
-        </option>
-        <option class="" name="saomiguel">
-          Corvo
-        </option>
+        <select type="text" name="concelho" class="filtros" id="concelho">
+          <option class="" name="select-concelho" selected disabled>
+            Selecione o concelho
+          </option>
+          <option class="" name="saomiguel">
+            Ponta Delgada
+          </option>
+          <option class="" name="saomiguel">
+            Santa Maria
+          </option>
+          <option class="" name="saomiguel">
+            Terceira
+          </option>
+          <option class="" name="saomiguel">
+            Pico
+          </option>
+          <option class="" name="saomiguel">
+            São Jorge
+          </option>
+          <option class="" name="saomiguel">
+            Faial
+          </option>
+          <option class="" name="saomiguel">
+            Graciosa
+          </option>
+          <option class="" name="saomiguel">
+            Flores
+          </option>
+          <option class="" name="saomiguel">
+            Corvo
+          </option>
 
-      </select>
+        </select>
 
-      <select type="text" name="freguesia" class="filtros">
-        <option class="" name="select-freguesia" selected disabled>
-          Selecione a freguesia
-        </option>
-        <option class="" name="saomiguel">
-          São Roque
-        </option>
-        <option class="" name="saomiguel">
-          Santa Maria
-        </option>
-        <option class="" name="saomiguel">
-          Terceira
-        </option>
-        <option class="" name="saomiguel">
-          Pico
-        </option>
-        <option class="" name="saomiguel">
-          São Jorge
-        </option>
-        <option class="" name="saomiguel">
-          Faial
-        </option>
-        <option class="" name="saomiguel">
-          Graciosa
-        </option>
-        <option class="" name="saomiguel">
-          Flores
-        </option>
-        <option class="" name="saomiguel">
-          Corvo
-        </option>
+        <select type="text" name="freguesia" class="filtros" id="freguesia">
+          <option class="" name="select-freguesia" selected disabled>
+            Selecione a freguesia
+          </option>
+          <option class="" name="saomiguel">
+            São Roque
+          </option>
+          <option class="" name="saomiguel">
+            Santa Maria
+          </option>
+          <option class="" name="saomiguel">
+            Terceira
+          </option>
+          <option class="" name="saomiguel">
+            Pico
+          </option>
+          <option class="" name="saomiguel">
+            São Jorge
+          </option>
+          <option class="" name="saomiguel">
+            Faial
+          </option>
+          <option class="" name="saomiguel">
+            Graciosa
+          </option>
+          <option class="" name="saomiguel">
+            Flores
+          </option>
+          <option class="" name="saomiguel">
+            Corvo
+          </option>
 
-      </select>
+        </select>
 
+      </div>
       <select type="text" name="finalidade" class="filtros">
         <option class="" name="select-finalidade" selected disabled>
           Selecione a sua finalidade
@@ -198,32 +200,36 @@
 
       </select>
 
-      <select type="text" name="tipologias" class="filtros">
-        <option class="" name="select-finalidade" selected disabled>
-          Selecione a tipologia
-        </option>
-        <option class="" name="t1">
-          T1
-        </option>
-        <option class="" name="t2">
-          T2
-        </option>
-      </select>
+      <div class="habitacao">
+        <select type="text" name="tipologias" class="filtros">
+          <option class="" name="select-finalidade" selected disabled>
+            Selecione a tipologia
+          </option>
+          <option class="" name="t1">
+            T1
+          </option>
+          <option class="" name="t2">
+            T2
+          </option>
+        </select>
 
-      <div class="filtros">
-        <label for="">Nº Cozinhas</label>
-        <input type="number" name="" value="">
+        <div class="filtros">
+          <label id="cozinha" name="cozinha" for="cozinha">Cozinhas</label>
+          <input type="range" min="1" max="3" value="1" class="slider" id="range_ktc">
+          <label id="cozinha" name="cozinha" for="cozinha">n_range</label>
+        </div>
+
+        <div class="filtros">
+          <label id="wc" name="wc" for="wc">Casas de banho</label>
+          <input type="range" min="1" max="6" value="1" class="slider" id="range_wc">
+        </div>
+
+        <div class="filtros">
+          <label for="">Garagem</label>
+          <input type="checkbox" name="" value="">
+        </div>
       </div>
 
-      <div class="filtros">
-        <label for="">Nº WC</label>
-        <input type="number" name="" value="">
-      </div>
-
-      <div class="filtros">
-        <label for="">Garagem</label>
-        <input type="checkbox" name="" value="">
-      </div>
 
       <div class="filtros">
         <label id="preco" name="preco" for="preco">Preço</label>
@@ -235,5 +241,6 @@
   </body>
   <script type="text/javascript" src="js/main.js"></script>
   <script type="text/javascript" src="js/session.js"></script>
+  <script type="text/javascript" src="js/search.js"></script>
 
 </html>
