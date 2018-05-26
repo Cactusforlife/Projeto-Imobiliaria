@@ -54,7 +54,7 @@
       </div>
     </div>
     <div class="nav_backend">
-      <button type="button" name="destaque">Destaque</button>
+      <button type="button" name="destaque">Imóveis</button>
       <button type="button" name="gestores">Gestores</button>
       <button type="button" name="estatisticas">Estatisticas</button>
     </div>

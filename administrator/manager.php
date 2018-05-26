@@ -11,7 +11,7 @@
   <body>
     <div id="top-bar">
       <a href="manager.php"><img src="../img/logo.png" alt=""></a>
-      <div id="session-box">
+      <div class="session-box-backend">
         <button type="button" id="open-modal-login" name="login">login</button>
         <div class="modal-login">
           <form class="" action="index.html" method="post">
@@ -56,6 +56,8 @@
     <div class="nav_backend">
       <button type="button" name="imoveis">Imóveis</button>
       <button type="button" name="visitas">Visitas</button>
+      <button type="button" name="visitas">Estatisticas</button>
     </div>
   </body>
+  <script type="text/javascript" src="../js/session.js"></script>
 </html>

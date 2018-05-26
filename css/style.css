@@ -6,6 +6,7 @@
 }
 
 body {
+  overflow: hidden;
   width: 100%;
   height: 100vh;
   display: flex;
@@ -23,45 +24,45 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #cc0000;
+  background-color: #001942;
   width: 100%;
-  height: 70px;
+  height: 80px;
 }
 
 #top-bar a {
+  width: 500px;
   height: 80%;
   margin-left: 20px;
 }
 
 #top-bar img {
   height: 100%;
-  margin-left: 20px;
 }
 
 /*BOX SESSION*/
 
-#session-box {
+.session-box {
   margin-right: 20px;
 }
 
-#session-box button {
+.session-box button {
   width: 75px;
   height: 27px;
   outline: none;
   border: 0;
-  border-radius: 3px;
+  border-radius: 2px;
   color: #000000;
   background-color: #ffffff;
   font-weight: bold;
 }
 
-#session-box button:hover {
+.session-box button:hover {
   color: #ffffff;
   background-color: #222222;
 }
 
 .modal-login {
-  z-index: 3000;
+  z-index: 3;
   top: 0;
   left: 0;
   width: 100vw;
@@ -86,13 +87,13 @@ body {
   background-color: white;
 }
 
-#close-modal-login {
+.close-modal-login {
   position: absolute;
   right: 0;
 }
 
 .modal-register {
-  z-index: 3000;
+  z-index: 3;
   top: 0;
   left: 0;
   width: 100vw;
@@ -117,54 +118,87 @@ body {
   background-color: white;
 }
 
-#close-modal-register {
+.close-modal-register {
   position: absolute;
   right: 0;
 }
 
-/*FIM BOX SESSION*/
+/*FIM SESSION BOX*/
+
+/* SESSION BOX BACKEND */
+
+.session-box-backend {
+  display: none;
+}
+
+/* FIM SESSION BOX BACKEND */
 
 /*FIM TOP BAR*/
 
-/*MAPA E SUA PESQUISA*/
+/*FILTRO*/
+
+#filters-box {
+  z-index: 1;
+  background-color: #ffffff;
+  position: absolute;
+  top: 144px;
+  left: 10px;
+  border-radius: 2px;
+  padding: 12px;
+}
+
+.filters-box {
+  width: 275px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.filter {
+  margin-bottom: 12px;
+}
+
+.island, .county, .parish {
+  display: flex;
+  flex-direction: column;
+}
+
+.habitation {
+  padding: 0px 12px;
+}
+
+.typology {
+  display: flex;
+  flex-direction: column;
+}
+
+.goal, .immobile-type {
+  display: flex;
+  flex-direction: column;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.kitchen, .wc {
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+/*FIM FILTRO*/
+
+/*MAPA*/
 
 #map {
   height: 100%;
   width: 100%;
 }
 
-.filter-box {
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-  background-color: #ffffff;
-  position: absolute;
-  top: 140px;
-  left: 10px;
-  border-radius: 3px;
-}
+/*FIM MAPA*/
 
-.filtros {
-  margin: 3px;
-}
+/* GESTÃO DO PRÓPRIO UTILIZADOR */
 
-select.filtros {
-  height: 40px;
-}
-
-div.filtros {
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-div.filtros label {
-  width: 50%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/*FIM MAPA E SUA PESQUISA*/
+/* FIM GESTÃO DO PRÓPRIO UTILIZADOR */

@@ -17,9 +17,9 @@ window.gMapsCallback = function() {
 
   function initialize() {
     var mapOptions = {
-      zoom: 8.2,
+      zoom: 7.4,
       center: new google.maps.LatLng(38.2883982, -28.2467441),
-      mapTypeId: google.maps.MapTypeId.ROADMAP
+      mapTypeId: 'satellite'
     };
     map = new google.maps.Map($('#map').get(0), mapOptions);
   }
