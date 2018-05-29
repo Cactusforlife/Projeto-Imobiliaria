@@ -21,10 +21,39 @@
         </div>
       </div>
     </div>
-    <div class="nav_backend">
+    <div class="nav-backend">
       <a href="admin-imoveis.php">Imóveis</a>
       <a href="admin-gestores.php">Gestores</a>
       <a href="admin-estatisticas.php">Estatisticas</a>
+    </div>
+    <div class="container-admin">
+      <div class="manager-register">
+        <form class="register-manager" action="index.html" method="post">
+
+          <label for="emailGestor">Email</label>
+          <input type="email" name="emailGestor">
+
+          <label for="passwordGestor">Password</label>
+          <input type="password" name="passwordGestor">
+
+          <label for="confirmarPasswordGestor">Confirmar password</label>
+          <input type="password" name="confirmarPasswordGestor">
+
+          <label for="nomeGestor">Nome</label>
+          <input type="text" name="nomeGestor">
+
+          <label for="sobrenomeGestor">Sobrenome</label>
+          <input type="text" name="sobrenomeGestor">
+
+          <label for="contatoGestor">Contato</label>
+          <input type="text" name="contactoGestor">
+
+          <input type="submit" name="adicionarGestor">
+        </form>
+      </div>
+      <div class="managers">
+
+      </div>
     </div>
   </body>
   <script type="text/javascript" src="../js/session.js"></script>

@@ -2,7 +2,7 @@
 
 /*SISTEMA DE LOGIN BACKEND*/
 
-.backend_container {
+.backend-container {
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -11,7 +11,7 @@
   align-items: center;
 }
 
-.login_backend form {
+.login-backend form {
   background-color: #222222;
   width: 50vw;
   height: 60vh;
@@ -94,7 +94,7 @@ body {
 
 /*NAV BACKEND*/
 
-.nav_backend {
+.nav-backend {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -104,17 +104,26 @@ body {
   padding-left: 56px;
 }
 
-.nav_backend a {
+.nav-backend a {
   text-decoration: none;
   color: white;
   padding-left: 7px;
   padding-right: 7px;
 }
 
-.nav_backend a:hover {
+.nav-backend a:hover {
   text-decoration: underline;
 }
 
 /*FIM NAV BACKEND*/
 
-/*FIM GERAL BACKEND*/
+/* ADMIN */
+
+.container-admin {
+  display: flex;
+  flex-direction: column;
+}
+
+.register-manager {
+  display: flex;
+}
