@@ -117,7 +117,9 @@
                 Selecione o concelho
               </option>
 
-              <?php if(isset($_POST['ilha'])) { //if i have this post
+              <?php 
+              
+              if(isset($_POST['ilha'])) { //if i have this post
 
               $ilha = $_POST['ilha']; // print it
 
