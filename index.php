@@ -6,10 +6,10 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <title>Imobiliária Açores</title>
+    
   </head>
 
   <body>
@@ -91,34 +91,8 @@
               <option name="seleccioneIlha" selected disabled>
                 Selecione a ilha
               </option>
-              <option name="saoMiguel">
-                São Miguel
-              </option>
-              <option name="santaMaria">
-                Santa Maria
-              </option>
-              <option name="terceira">
-                Terceira
-              </option>
-              <option name="pico">
-                Pico
-              </option>
-              <option name="saoJorge">
-                São Jorge
-              </option>
-              <option name="faial">
-                Faial
-              </option>
-              <option name="graciosa">
-                Graciosa
-              </option>
-              <option name="flores">
-                Flores
-              </option>
-              <option name="corvo">
-                Corvo
-              </option>
-            </select>
+            
+              </select>
 
           </div>
 
@@ -144,13 +118,8 @@
               <option name="seleccioneFreguesia" selected disabled>
                 Selecione a freguesia
               </option>
-              <option name="saoMiguel">
-                São Miguel
-              </option>
-              <option name="santaMaria">
-                Santa Maria
-              </option>
-            </select>
+              
+              </select>
 
           </div>
 
@@ -159,15 +128,11 @@
         <div class="filter goal">
 
           <select type="text" name="finalidade">
+
             <option name="seleccioneFinalidade" selected disabled>
               Selecione a sua finalidade
             </option>
-            <option name="comprar">
-              Comprar
-            </option>
-            <option name="arrendar">
-              Arrendar
-            </option>
+          
           </select>
 
         </div>
@@ -183,24 +148,11 @@
         <div class="filter immobile-type">
 
           <select type="text" name="tipoImovel">
+
             <option name="seleccioneTipoImovel" selected disabled>
               Selecione o tipo de imóvel
             </option>
-            <option name="moradia">
-              Moradia
-            </option>
-            <option name="apartamento">
-              Apartamento
-            </option>
-            <option name="quinta">
-              Quinta
-            </option>
-            <option name="terreno">
-              Terreno
-            </option>
-            <option name="armazem">
-              Armazem
-            </option>
+           
           </select>
 
         </div>
@@ -213,12 +165,7 @@
               <option name="selecioneFinalidade" selected disabled>
                 Selecione a tipologia
               </option>
-              <option name="t1">
-                T1
-              </option>
-              <option name="t2">
-                T2
-              </option>
+
             </select>
 
           </div>
@@ -257,6 +204,7 @@
     <div id="map"></div>
 
   </body>
+
   <script type="text/javascript" src="js/main.js"></script>
   <script type="text/javascript" src="js/session.js"></script>
 
