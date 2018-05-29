@@ -15,7 +15,7 @@
   <body>
 
     <div id="top-bar">
-      <a href="index.php"><img src="img/logo.png" alt=""><h1>AçorProp</h1></a>
+      <a href="index.php"><img src="img/logo.png" alt=""></a>
 
       <div class="session-box">
 
