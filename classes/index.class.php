@@ -13,48 +13,6 @@ class index extends Database {
 
   }
 
-   public function Concelho($ilha){
-
-    $sql='select * from concelho where idIlha = :idIlha';
-    $ilha=  array('idIlha' => $idIlha);
-    $concelho=$this->query($sql, $ilha);
-    foreach ($concelho as $value) {
-      echo("<option value=".$value['idConcelho']."   id='index'>".utf8_decode($value['concelho'])."</option>");
-    }
-    
-  }
-
-
-  public function finalidade(){
-    echo(" <option value=''>Finalidade pretendida</option>");
-    $sql='select * from finalidade';
-    $finalidade=$this->query($sql);
-    foreach ($finalidade as $value) {
-      echo("<option value=".$value['idFinalidade']."   id='index'>".utf8_decode($value['finalidade'])."</option>");
-    }
-
-  }
-
-  public function selectTipoImovel(){
-    echo("<option value=''>Tipo de imóvel</option>");
-    $sql='select * from tipo_imovel';
-    $tipoImovel=$this->query($sql);
-    foreach ($tipoImovel as $value) {
-      echo("<option value=".$value['idTipoImovel']."   id='index'>".utf8_decode($value['tipoImovel'])."</option>");
-    }
-
-  }
-
-  public function selectTipologia(){
-    echo("<option value=''>Tipologia</option>");
-    $sql='select * from tipologia';
-    $tipologia=$this->query($sql);
-    foreach ($tipologia as $value) {
-      echo("<option value=".$value['idTipologia']."   id='index'>".utf8_decode($value['tipologia'])."</option>");
-    }
-
-  }
-
 
 
 }
