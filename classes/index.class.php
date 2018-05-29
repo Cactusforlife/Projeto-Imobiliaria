@@ -13,7 +13,7 @@ class index extends Database {
 
   }
 
-   public function Concelho($Ilha){
+   public function Concelho($ilha){
 
     $sql='select * from concelho where id_ilha = :id_ilha';
     $ilha=  array('id_ilha' => $ilha);
@@ -24,7 +24,7 @@ class index extends Database {
     
   }
 
-    public function Freguesia($Concelho){
+    public function Freguesia($concelho){
 
     $sql='select * from freguesia where id_concelho = :id_concelho';
     $concelho=  array('id_concelho' => $concelho);
