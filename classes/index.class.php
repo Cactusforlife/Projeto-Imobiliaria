@@ -27,7 +27,7 @@ class index extends Database {
     public function Freguesia($Concelho){
 
     $sql='select * from freguesia where id_concelho = :id_concelho';
-    $concelho=  array('id_concelho' => $id_concelho);
+    $concelho=  array('id_concelho' => $concelho);
     $freguesia=$this->query($sql);
     foreach ($freguesia as $value) {
       echo("<option value=".$value['id_freguesia']." id='freguesia'>".utf8_encode($value['nome'])."</option>");
