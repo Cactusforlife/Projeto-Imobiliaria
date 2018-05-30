@@ -3,8 +3,7 @@
 /*SISTEMA DE LOGIN BACKEND*/
 
 .backend-container {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,8 +22,6 @@
 
 /*FIM SISTEMA DE LOGIN BACKEND*/
 
-/*FIM SISTEMA DE LOGIN BACKEND*/
-
 /*GERAL BACKEND*/
 
 * {
@@ -33,7 +30,6 @@
 }
 
 body {
-  overflow: hidden;
   width: 100%;
   position: relative;
   display: flex;
@@ -55,8 +51,7 @@ body {
   height: 80px;
 }
 
-#top-bar a {
-  width: 500px;
+#top-bar>a {
   height: 80%;
   margin-left: 20px;
 }
@@ -68,8 +63,20 @@ body {
 /* SESSION BOX BACKEND */
 
 .session-box-backend {
+  color: #ffffff;
   display: flex;
-  padding: 6px;
+  height: 80%;
+  margin-right: 20px;
+}
+
+.session-box-backend a {
+  color: white;
+  text-decoration: none;
+}
+
+.session-box-backend a:hover {
+  color: white;
+  text-decoration: underline;
 }
 
 .session-on {
@@ -82,8 +89,10 @@ body {
 }
 
 .photo-employee {
-  width: 56px;
-  height: 56px;
+  border: 0;
+  outline: none;
+  width: 64px;
+  height: 64px;
   background-color: grey;
   border-radius: 50%;
 }
@@ -101,7 +110,6 @@ body {
   width: 100%;
   height: 40px;
   background-color: #888888;
-  padding-left: 56px;
 }
 
 .nav-backend a {
@@ -109,6 +117,10 @@ body {
   color: white;
   padding-left: 7px;
   padding-right: 7px;
+}
+
+.nav-backend>*:first-child {
+  margin-left: 20px;
 }
 
 .nav-backend a:hover {
@@ -120,10 +132,83 @@ body {
 /* ADMIN */
 
 .container-admin {
+  width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
-.register-manager {
-  display: flex;
+.container-admin>* {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
+
+.container-admin>*:first-child {
+  margin-top: 20px;
+}
+
+.open-manager-register {
+  align-self: flex-start;
+  margin-left: 5%;
+}
+
+.manager-register {
+  width: 90%;
+}
+
+.manager-register form {
+  display: flex;
+  flex-direction: column;
+  background-color: grey;
+  padding: 20px;
+}
+
+.managers {
+  width: 90%;
+  height: 800px;
+  background-color: grey;
+}
+
+/* FIM ADMIN*/
+
+/* GESTOR */
+
+.container-manager {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-manager>* {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.container-manager>*:first-child {
+  margin-top: 20px;
+}
+
+.open-property-register {
+  align-self: flex-start;
+  margin-left: 5%;
+}
+
+.property-register {
+  width: 90%;
+}
+
+.property-register form {
+  display: flex;
+  flex-direction: column;
+  background-color: grey;
+  padding: 20px;
+}
+
+.properties {
+  width: 90%;
+  height: 800px;
+  background-color: grey;
+}
+
+/* FIM GESTOR*/

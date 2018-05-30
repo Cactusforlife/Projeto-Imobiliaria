@@ -9,22 +9,23 @@
   </head>
   <body>
     <div id="top-bar">
-      <a href="admin-imoveis.php"><img src="../img/logo.png" alt=""></a>
+      <a href="admin-imoveis.php"><img src="../img/logo-admin.png" alt=""></a>
       <div class="session-box-backend">
         <div class="session-on">
           <p>Bem-vindo, </p>
-          <p>Júlio Medeiros</p>
-          <button type="button" name="backend_logout">logout</button>
+          <p><b>Júlio Medeiros</b></p>
+          <a href="index.php">logout</a>
         </div>
-        <div class="photo-employee">
-
-        </div>
+        <button class="photo-employee"></button>
       </div>
     </div>
-    <div class="nav_backend">
+    <div class="nav-backend">
       <a href="admin-imoveis.php">Imóveis</a>
       <a href="admin-gestores.php">Gestores</a>
       <a href="admin-estatisticas.php">Estatisticas</a>
+    </div>
+    <div class="container-admin">
+
     </div>
   </body>
   <script type="text/javascript" src="../js/session.js"></script>

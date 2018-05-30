@@ -9,16 +9,14 @@
   </head>
   <body>
     <div id="top-bar">
-      <a href="admin-imoveis.php"><img src="../img/logo.png" alt=""></a>
+      <a href="admin-imoveis.php"><img src="../img/logo-admin.png" alt=""></a>
       <div class="session-box-backend">
         <div class="session-on">
           <p>Bem-vindo, </p>
-          <p>Júlio Medeiros</p>
-          <button type="button" name="backend_logout">logout</button>
+          <p><b>Júlio Medeiros</b></p>
+          <a href="index.php">logout</a>
         </div>
-        <div class="photo-employee">
-
-        </div>
+        <button class="photo-employee"></button>
       </div>
     </div>
     <div class="nav-backend">
@@ -27,6 +25,7 @@
       <a href="admin-estatisticas.php">Estatisticas</a>
     </div>
     <div class="container-admin">
+      <button type="button" class="open-manager-register" name="abrirRegistoGestor">Criar gestor</button>
       <div class="manager-register">
         <form class="register-manager" action="index.html" method="post">
 
@@ -48,11 +47,11 @@
           <label for="contatoGestor">Contato</label>
           <input type="text" name="contactoGestor">
 
-          <input type="submit" name="adicionarGestor">
+          <input type="submit" name="adicionarGestor" value="Criar">
         </form>
       </div>
       <div class="managers">
-
+<p>gestores criados</p>
       </div>
     </div>
   </body>
