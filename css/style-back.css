@@ -4,6 +4,7 @@
 
 .backend-container {
   width: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -65,6 +66,7 @@ body {
 .session-box-backend {
   color: #ffffff;
   display: flex;
+  align-items: center;
   height: 80%;
   margin-right: 20px;
 }
@@ -80,10 +82,12 @@ body {
 }
 
 .session-on {
+  height: 80%;
+  font-size: 0.8em;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  justify-content: center;
+  justify-content: space-around;
   margin-right: 10px;
   flex-wrap: wrap;
 }
@@ -91,10 +95,30 @@ body {
 .photo-employee {
   border: 0;
   outline: none;
-  width: 64px;
-  height: 64px;
+  width: 50px;
+  height: 50px;
   background-color: grey;
   border-radius: 50%;
+}
+
+.session-box-backend ul {
+  display: none;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: grey;
+  position: absolute;
+  top: 70px;
+  right: 43px;
+  list-style-type: none;
+  padding: 10px;
+}
+
+.session-box-backend li {
+  padding: 5px;
+}
+
+.settings_on {
+  display: flex;
 }
 
 /* FIM SESSION BOX BACKEND */
