@@ -101,6 +101,14 @@
           <input type="submit" name="adicionarImovel" value="Criar">
         </form>
       </div>
+      <h2 class="self_left">Pedidos para visitas</h2>
+      <div class="featured-immobiles">
+
+      </div>
+      <h2 class="self_left">Visitas marcadas</h2>
+      <div class="featured-immobiles">
+
+      </div>
       <div class="immobiles">
         <p>Imóveis criados</p>
       </div>
