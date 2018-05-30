@@ -27,21 +27,21 @@
       <a href="manager-statistics.php">Estatisticas</a>
     </div>
     <div class="container-manager">
-      <button type="button" class="open-property-register" name="abrirRegistoImovel">Criar Imovel</button>
-      <div class="property-register">
-        <form class="register-property" action="index.html" method="post">
+      <button type="button" class="open-immobile-register self_left" name="abrirRegistoImovel">Criar Imovel</button>
+      <div class="immobile-register">
+        <form class="register-immobile" action="index.html" method="post">
 
-          <select class="property-finality" name="inserirFinalidade">
+          <select class="immobile-finality" name="inserirFinalidade">
             <option name="seleccioneFinalidadeImovel" selected disabled>Selecione a finalidade</option>
           </select>
 
-          <select class="property-immobile-type" name="inserirTipoImovel">
+          <select class="immobile-immobile-type" name="inserirTipoImovel">
             <option name="seleccioneTipoImovelImovel" selected disabled>Selecione o tipo de imóvel</option>
           </select>
 
-          <div class="property-habitation">
+          <div class="immobile-habitation">
 
-            <select class="property-typology" name="inserirTipologia">
+            <select class="immobile-typology" name="inserirTipologia">
               <option name="seleccioneTTiplogiaImovel" selected disabled>Selecione a tipologia</option>
             </select>
 
@@ -58,17 +58,17 @@
             <input type="number" name="inserirAreaBruta">
           </div>
 
-          <div class="property-archipelago">
+          <div class="immobile-archipelago">
 
-            <select class="property-island" name="inserirIlha">
+            <select class="immobile-island" name="inserirIlha">
               <option name="seleccioneIlhaImovel" selected disabled>Selecione a ilha</option>
             </select>
 
-            <select class="property-county" name="inserirConcelho">
+            <select class="immobile-county" name="inserirConcelho">
               <option name="seleccioneConcelhoImovel" selected disabled>Selecione o concelho</option>
             </select>
 
-            <select class="property-parish" name="inserirFreguesia">
+            <select class="immobile-parish" name="inserirFreguesia">
               <option name="seleccioneFreguesiaImovel" selected disabled>Selecione a freguesia</option>
             </select>
 
@@ -101,7 +101,7 @@
           <input type="submit" name="adicionarImovel" value="Criar">
         </form>
       </div>
-      <div class="properties">
+      <div class="immobiles">
         <p>Imóveis criados</p>
       </div>
     </div>

@@ -39,6 +39,11 @@ body {
   align-items: center;
 }
 
+.self_left {
+  align-self: flex-start;
+  margin-left: 5%;
+}
+
 /*FIM GERAL BACKEND*/
 
 /*TOP BAR BACKEND*/
@@ -117,10 +122,6 @@ body {
   padding: 5px;
 }
 
-.settings_on {
-  display: flex;
-}
-
 /* FIM SESSION BOX BACKEND */
 
 /*FIM TOP BAR BACKEND*/
@@ -176,6 +177,18 @@ body {
   margin-left: 5%;
 }
 
+/* IMÓVEIS */
+
+.featured-immobiles {
+  width: 90%;
+  height: 300px;
+  background-color: grey;
+}
+
+/* FIM IMÓVEIS */
+
+/* REGISTAR GESTORES */
+
 .manager-register {
   width: 90%;
 }
@@ -187,11 +200,17 @@ body {
   padding: 20px;
 }
 
+/* FIM REGISTAR GESTORES */
+
+/* GESTORES */
+
 .managers {
   width: 90%;
   height: 800px;
   background-color: grey;
 }
+
+/* FIM GESTORES */
 
 /* FIM ADMIN*/
 
@@ -213,26 +232,29 @@ body {
   margin-top: 20px;
 }
 
-.open-property-register {
-  align-self: flex-start;
-  margin-left: 5%;
-}
+/* REGISTAR IMÓVEL */
 
-.property-register {
+.immobile-register {
   width: 90%;
 }
 
-.property-register form {
+.immobile-register form {
   display: flex;
   flex-direction: column;
   background-color: grey;
   padding: 20px;
 }
 
-.properties {
+/* FIM REGISTAR IMÓVEL */
+
+/* IMÓVEIS */
+
+.immobiles {
   width: 90%;
   height: 800px;
   background-color: grey;
 }
+
+/* FIM IMÓVEIS */
 
 /* FIM GESTOR*/

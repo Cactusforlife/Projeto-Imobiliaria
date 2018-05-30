@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="top-bar">
-      <a href="admin-imoveis.php"><img src="../img/logo-admin.png" alt=""></a>
+      <a href="admin-immobiles.php"><img src="../img/logo-admin.png" alt=""></a>
       <div class="session-box-backend">
         <div class="session-on">
           <p>Bem-vindo, </p>

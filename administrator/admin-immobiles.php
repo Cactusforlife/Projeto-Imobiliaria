@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="top-bar">
-      <a href="admin-imoveis.php"><img src="../img/logo-admin.png" alt=""></a>
+      <a href="admin-immobiles.php"><img src="../img/logo-admin.png" alt=""></a>
       <div class="session-box-backend">
         <div class="session-on">
           <p>Bem-vindo, </p>
@@ -28,7 +28,20 @@
       <a href="admin-statistics.php">Estatisticas</a>
     </div>
     <div class="container-admin">
+      <h2 class="self_left">Pedidos para destaque</h2>
+      <div class="featured-immobiles">
 
+      </div>
+      <h2 class="self_left">Imóveis Destacados</h2>
+      <div class="featured-immobiles">
+
+      </div>
+
+      <button class="self_left">Imóveis</button>
+      <button class="self_left">Arquivado</button>
+      <div class="featured-immobiles">
+
+      </div>
     </div>
   </body>
   <script type="text/javascript" src="../js/session-backend.js"></script>
