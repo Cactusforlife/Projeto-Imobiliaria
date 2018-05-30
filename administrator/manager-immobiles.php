@@ -98,6 +98,9 @@
           <label for="inserirEstado">Estado</label>
           <input type="text" name="inserirEstado">
 
+          <input type="radio" name="proposicao" value="destaque">Propor a destaque
+          <input type="radio" name="proposicao" value="todos" checked>Não propor a destaque
+
           <input type="submit" name="adicionarImovel" value="Criar">
         </form>
       </div>

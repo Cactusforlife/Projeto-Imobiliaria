@@ -9,7 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <title>Imobiliária Açores</title>
-    
+
   </head>
 
   <body>
@@ -82,7 +82,10 @@
       <form class="filters-box" action="index.php" method="post">
 
         <h3>Procure imóveis</h3>
-
+        <div class="filter featured">
+          <input type="radio" name="imoveis" value="destaque" checked>destaque
+          <input type="radio" name="imoveis" value="todos">todos
+        </div>
         <div class="filter archipelago">
 
           <div class="island">
@@ -91,7 +94,7 @@
               <option name="seleccioneIlha" selected disabled>
                 Selecione a ilha
               </option>
-            
+
               </select>
 
           </div>
@@ -118,7 +121,7 @@
               <option name="seleccioneFreguesia" selected disabled>
                 Selecione a freguesia
               </option>
-              
+
               </select>
 
           </div>
@@ -132,7 +135,7 @@
             <option name="seleccioneFinalidade" selected disabled>
               Selecione a sua finalidade
             </option>
-          
+
           </select>
 
         </div>
@@ -152,7 +155,7 @@
             <option name="seleccioneTipoImovel" selected disabled>
               Selecione o tipo de imóvel
             </option>
-           
+
           </select>
 
         </div>
