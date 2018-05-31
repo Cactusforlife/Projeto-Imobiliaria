@@ -31,8 +31,8 @@
     <div class="container-admin">
 
       <div class="tab-links">
-        <button class="btns-tab current" data-tab="active">Activo</button>
-        <button class="btns-tab" data-tab="completed">Concluído</button>
+        <button class="btns-tab active current" data-tab="active">Activo</button>
+        <button class="btns-tab completed" data-tab="completed">Concluído</button>
       </div>
 
       <div class="immobiles-tabcontent current" id="active">

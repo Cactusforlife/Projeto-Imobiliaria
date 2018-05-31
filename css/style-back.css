@@ -352,6 +352,7 @@ hr {
   display: flex;
   justify-content: flex-start;
   width: 90%;
+  margin-bottom: 0;
 }
 
 .btns-tab {
@@ -362,13 +363,19 @@ hr {
   align-items: center;
   color: #ffffff;
   font-weight: bold;
-  margin: 3px;
   background-color: darkgrey;
   padding: 9px;
   border: 0;
-  border-radius: 3px;
   outline: none;
   height: 44px;
+}
+
+.btns-tab.active {
+  border-top-left-radius: 3px;
+}
+
+.btns-tab.completed {
+  border-top-right-radius: 3px;
 }
 
 .btns-tab:hover {
@@ -380,6 +387,7 @@ hr {
 }
 
 .immobiles-tabcontent {
+  margin-top: 0;
   border: 3.6px solid grey;
   border-radius: 2px;
   width: 90%;
