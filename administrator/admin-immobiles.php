@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="top-bar">
-      <a href="admin-immobiles.php"><img src="../img/logo-admin.png" alt=""></a>
+      <a href="admin-features.php"><img src="../img/logo-admin.png" alt=""></a>
       <div class="session-box-backend">
         <div class="session-on">
           <p>Bem-vindo, </p>
@@ -23,26 +23,27 @@
       </div>
     </div>
     <div class="nav-backend">
+      <a href="admin-features.php">Destaques</a>
       <a href="admin-immobiles.php">Imóveis</a>
       <a href="admin-managers.php">Gestores</a>
       <a href="admin-statistics.php">Estatisticas</a>
     </div>
     <div class="container-admin">
-      <h2 class="self_left">Pedidos para destaque</h2>
-      <div class="featured-immobiles">
 
-      </div>
-      <h2 class="self_left">Imóveis Destacados</h2>
-      <div class="featured-immobiles">
-
+      <div class="tab-links">
+        <button class="btns-tab current" data-tab="active">Activo</button>
+        <button class="btns-tab" data-tab="completed">Concluído</button>
       </div>
 
-      <button class="self_left">Imóveis</button>
-      <button class="self_left">Arquivado</button>
-      <div class="featured-immobiles">
-
+      <div class="immobiles-tabcontent current" id="active">
+1
       </div>
+      <div class="immobiles-tabcontent" id="completed">
+2
+      </div>
+
     </div>
   </body>
   <script type="text/javascript" src="../js/session-backend.js"></script>
+  <script type="text/javascript" src="../js/backend.js"></script>
 </html>

@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="top-bar">
-      <a href="admin-immobiles.php"><img src="../img/logo-admin.png" alt=""></a>
+      <a href="admin-features.php"><img src="../img/logo-admin.png" alt=""></a>
       <div class="session-box-backend">
         <div class="session-on">
           <p>Bem-vindo, </p>
@@ -23,12 +23,13 @@
       </div>
     </div>
     <div class="nav-backend">
+      <a href="admin-features.php">Destaques</a>
       <a href="admin-immobiles.php">Imóveis</a>
       <a href="admin-managers.php">Gestores</a>
       <a href="admin-statistics.php">Estatisticas</a>
     </div>
     <div class="container-admin">
-      <button type="button" class="open-manager-register" name="abrirRegistoGestor">Criar gestor</button>
+      <button type="button" class="open-manager-register" name="abrirRegistoGestor"><img src="../img/people.png">Criar gestor</button>
       <div class="manager-register">
         <form class="register-manager" action="index.html" method="post">
 
@@ -53,10 +54,12 @@
           <input type="submit" name="adicionarGestor" value="Criar">
         </form>
       </div>
+      <hr>
       <div class="managers">
 <p>gestores criados</p>
       </div>
     </div>
   </body>
   <script type="text/javascript" src="../js/session-backend.js"></script>
+  <script type="text/javascript" src="../js/backend.js"></script>
 </html>

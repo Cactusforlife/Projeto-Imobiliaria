@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="top-bar">
-      <a href="admin-immobiles.php"><img src="../img/logo-admin.png" alt=""></a>
+      <a href="admin-features.php"><img src="../img/logo-admin.png" alt=""></a>
       <div class="session-box-backend">
         <div class="session-on">
           <p>Bem-vindo, </p>
@@ -23,6 +23,7 @@
       </div>
     </div>
     <div class="nav-backend">
+      <a href="admin-features.php">Destaques</a>
       <a href="admin-immobiles.php">Imóveis</a>
       <a href="admin-managers.php">Gestores</a>
       <a href="admin-statistics.php">Estatisticas</a>
