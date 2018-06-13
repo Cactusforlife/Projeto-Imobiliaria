@@ -1,35 +1,21 @@
 <?php
-/**
- * TODO Auto-generated comment.
- */
+
+include('TipoUtilizador.php');
+
 class Funcionario extends TipoUtilizador {
-	/**
-	 * TODO Auto-generated comment.
-	 */
+	
 	private $id_utilizador;
-	/**
-	 * TODO Auto-generated comment.
-	 */
+
 	private $id_tipo;
-	/**
-	 * TODO Auto-generated comment.
-	 */
+
 	private $email;
-	/**
-	 * TODO Auto-generated comment.
-	 */
+
 	private $password;
-	/**
-	 * TODO Auto-generated comment.
-	 */
+
 	private $nome;
-	/**
-	 * TODO Auto-generated comment.
-	 */
+
 	private $sobrenome;
-	/**
-	 * TODO Auto-generated comment.
-	 */
+	
 	private $contacto;
 
 	public function __construct($id_utilizador, TipoUtilizador $id_tipo ,$email,$password,$nome,$sobrenome,$contacto){
@@ -44,5 +30,50 @@ class Funcionario extends TipoUtilizador {
 
 	}
 
-	public function
+	public function getID_Utilizador(){
+
+		return $this->id_utilizador;
+
+	}
+	
+	public function getID_Tipo(){
+
+		return $this->id_tipo;
+	}
+
+	public function getEmail(){
+
+		return $this->email;
+
+	}
+
+	public function getPassword(){
+
+		return $this->password;
+
+	}
+
+	public function getNome(){
+
+		return $this->nome;
+
+	}
+
+	public function getSobrenome(){
+
+		return $this->sobrenome;
+
+	}
+
+	public function getContacto(){
+
+		return $this->contacto;
+
+	}
+
+
+
+
+	
+	
 }

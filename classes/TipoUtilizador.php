@@ -1,15 +1,11 @@
 <?php
-/**
- * TODO Auto-generated comment.
- */
+
+include('database.php');
+
 class TipoUtilizador extends Database {
-	/**
-	 * TODO Auto-generated comment.
-	 */
+
 	private $id_tipo;
-	/**
-	 * TODO Auto-generated comment.
-	 */
+
 	private $tipo;
 
 	public function __construct($id_tipo,$tipo){
@@ -19,7 +15,7 @@ class TipoUtilizador extends Database {
 
 	}
 
-	public function getId_tipo(){
+	public function getID_Tipo(){
 
 		return $this->id_tipo;
 	}

@@ -1,5 +1,5 @@
 <?php
-require_once('database.class.php');
+require('database.php');
 
 class index extends Database {
 
