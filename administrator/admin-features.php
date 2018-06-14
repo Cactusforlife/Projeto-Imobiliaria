@@ -1,3 +1,13 @@
+<?php
+
+  session_start();
+  include ('../classes/funcionario.php');
+  
+
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt" dir="ltr">
   <head>

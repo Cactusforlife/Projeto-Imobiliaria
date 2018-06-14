@@ -14,14 +14,14 @@ include('database.php');
 
         
         $_SESSION['Administrator'] = $result[0]['id_tipo'];
-        header('location:admin.php');
+        header('location:admin-features.php');
         
         }
 
         else{
 
         $_SESSION['Gestor'] = $result[0]['id_tipo'];
-        header('location:manager.php');
+        header('location:manager-immobiles.php');
 
         }
         
@@ -33,6 +33,7 @@ include('database.php');
 
 
     }
+    
 
     }
 

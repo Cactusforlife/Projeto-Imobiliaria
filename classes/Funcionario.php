@@ -1,8 +1,8 @@
 <?php
 
-include('TipoUtilizador.php');
+include('database.php');
 
-class Funcionario extends TipoUtilizador {
+class Funcionario extends Database {
 	
 	private $id_utilizador;
 
@@ -18,7 +18,7 @@ class Funcionario extends TipoUtilizador {
 	
 	private $contacto;
 
-	public function __construct($id_utilizador, TipoUtilizador $id_tipo ,$email,$password,$nome,$sobrenome,$contacto){
+	public function __construct($id_utilizador, $id_tipo ,$email,$password,$nome,$sobrenome,$contacto){
 
 		$this->id_utilizador = $id_utilizador;
 		$this->id_tipo = $id_tipo;
@@ -27,6 +27,8 @@ class Funcionario extends TipoUtilizador {
 		$this->nome = $nome;
 		$this->sobrenome = $sobrenome;
 		$this->contacto = $contacto;
+
+		$db = parent::_construct('../classes/config.ini');
 
 	}
 
@@ -68,6 +70,12 @@ class Funcionario extends TipoUtilizador {
 	public function getContacto(){
 
 		return $this->contacto;
+
+	}
+
+	public function getSession(){
+
+		
 
 	}
 
