@@ -1,37 +1,13 @@
 <?php
 
-  include('../classes/Funcionario.php');
+  include('../classes/Administration.php');
   session_start();
 
 if($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    $db = new Database('../classes/config.ini');
+    $bd = new Administration('../classes/config.ini');
 
-    $email = $_POST['email'];
-
-    $password = $_POST['password'];
-		
-		$sql = "SELECT * from funcionario WHERE email = '$email' AND password = '$password' ";			
-		
-    $result = $db->query($sql);
-
-    if($result[0]["id_tipo"] == 1){
-
-      
-      $_SESSION['Administrator'] = $result[0]['id_tipo'];
-      header('location:admin.php');
-      
-    }
-
-    else{
-
-      $_SESSION['Gestor'] = $result[0]['id_tipo'];
-      header('location:manager.php');
-
-    }
-    
-
-   var_dump($result).'<br>';
+    $bd->Login($_POST['email'],$_POST['password']);
 		
 	}
   
