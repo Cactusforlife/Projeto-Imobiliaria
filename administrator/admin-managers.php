@@ -28,9 +28,9 @@
       <a href="admin-managers.php">Gestores</a>
       <a href="admin-statistics.php">Estatisticas</a>
     </div>
-    <div class="container-admin">
-      <button type="button" class="open-manager-register" name="abrirRegistoGestor"><img src="../img/people.png">Criar gestor</button>
-      <div class="manager-register">
+    <div class="container-backend">
+      <button type="button" class="btn-requests" name="abrirRegistoGestor">Criar gestor</button>
+      <div class="manager-register box slide-box">
         <form class="register-manager" action="index.html" method="post">
 
           <label for="emailGestor">Email</label>
@@ -54,9 +54,64 @@
           <input type="submit" name="adicionarGestor" value="Criar">
         </form>
       </div>
-      <hr>
-      <div class="managers">
-<p>gestores criados</p>
+      <h2 class="self_left">Gestores</h2>
+      <div class="managers box">
+        <div class="manager">
+          <div class="photo-manager">
+
+          </div>
+          <label for="">Júlio Medeiros</label>
+          <a href="#">juliomedeiros@acorprop.com</a>
+        </div>
+        <div class="manager">
+          <div class="photo-manager">
+
+          </div>
+          <label for="">Júlio Medeiros</label>
+          <a href="#">juliomedeiros@acorprop.com</a>
+        </div>
+        <div class="manager">
+          <div class="photo-manager">
+
+          </div>
+          <label for="">Júlio Medeiros</label>
+          <a href="#">juliomedeiros@acorprop.com</a>
+        </div>
+        <div class="manager">
+          <div class="photo-manager">
+
+          </div>
+          <label for="">Júlio Medeiros</label>
+          <a href="#">juliomedeiros@acorprop.com</a>
+        </div>
+        <div class="manager">
+          <div class="photo-manager">
+
+          </div>
+          <label for="">Júlio Medeiros</label>
+          <a href="#">juliomedeiros@acorprop.com</a>
+        </div>
+        <div class="manager">
+          <div class="photo-manager">
+
+          </div>
+          <label for="">Júlio Medeiros</label>
+          <a href="#">juliomedeiros@acorprop.com</a>
+        </div>
+        <div class="manager">
+          <div class="photo-manager">
+
+          </div>
+          <label for="">Júlio Medeiros</label>
+          <a href="#">juliomedeiros@acorprop.com</a>
+        </div>
+        <div class="manager">
+          <div class="photo-manager">
+
+          </div>
+          <label for="">Júlio Medeiros</label>
+          <a href="#">juliomedeiros@acorprop.com</a>
+        </div>
       </div>
     </div>
   </body>

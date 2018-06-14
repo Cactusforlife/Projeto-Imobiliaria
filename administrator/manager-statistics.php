@@ -24,11 +24,13 @@
     </div>
     <div class="nav-backend">
       <a href="manager-immobiles.php">Imóveis</a>
+      <a href="manager-visits.php">Visitas</a>
       <a href="manager-statistics.php">Estatisticas</a>
     </div>
-    <div class="container-manager">
+    <div class="container-backend">
 
     </div>
   </body>
   <script type="text/javascript" src="../js/session-backend.js"></script>
+  <script type="text/javascript" src="../js/backend.js"></script>
 </html>

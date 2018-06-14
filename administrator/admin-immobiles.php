@@ -28,17 +28,17 @@
       <a href="admin-managers.php">Gestores</a>
       <a href="admin-statistics.php">Estatisticas</a>
     </div>
-    <div class="container-admin">
+    <div class="container-backend">
 
       <div class="tab-links">
         <button class="btns-tab active current" data-tab="active">Activo</button>
         <button class="btns-tab completed" data-tab="completed">Concluído</button>
       </div>
 
-      <div class="immobiles-tabcontent current" id="active">
+      <div class="immobiles-tabcontent box current" id="active">
 1
       </div>
-      <div class="immobiles-tabcontent" id="completed">
+      <div class="immobiles-tabcontent box" id="completed">
 2
       </div>
 

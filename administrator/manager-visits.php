@@ -2,14 +2,14 @@
 <html lang="pt" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Administração</title>
+    <title>Gestão</title>
     <link rel="stylesheet" href="../css/style-back.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
   <body>
     <div id="top-bar">
-      <a href="admin-features.php"><img src="../img/logo-admin.png" alt=""></a>
+      <a href="manager-immobiles.php"><img src="../img/logo-manager.png" alt=""></a>
       <div class="session-box-backend">
         <div class="session-on">
           <p>Bem-vindo, </p>
@@ -23,14 +23,31 @@
       </div>
     </div>
     <div class="nav-backend">
-      <a href="admin-features.php">Destaques</a>
-      <a href="admin-immobiles.php">Imóveis</a>
-      <a href="admin-managers.php">Gestores</a>
-      <a href="admin-statistics.php">Estatisticas</a>
+      <a href="manager-immobiles.php">Imóveis</a>
+      <a href="manager-visits.php">Visitas</a>
+      <a href="manager-statistics.php">Estatisticas</a>
     </div>
     <div class="container-backend">
+      <button class="btn-requests">Pedido visitas</button>
+      <div class="box slide-box">
 
+      </div>
+      <h2 class="self_left">Visitas marcadas</h2>
+      <div class="box">
+        <div class="">
+          <div class="thumbnail">
+            
+          </div>
+          <div class="">
+
+          </div>
+          <div class="requests">
+
+          </div>
+        </div>
+      </div>
     </div>
   </body>
   <script type="text/javascript" src="../js/session-backend.js"></script>
+  <script type="text/javascript" src="../js/backend.js"></script>
 </html>

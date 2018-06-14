@@ -1,6 +1,4 @@
-/*INDEX BACKEND*/
-
-/*SISTEMA DE LOGIN BACKEND*/
+/***SISTEMA DE LOGIN BACKEND***/
 
 .backend-container {
   width: 100%;
@@ -21,9 +19,9 @@
   align-items: center;
 }
 
-/*FIM SISTEMA DE LOGIN BACKEND*/
+/***FIM SISTEMA DE LOGIN BACKEND***/
 
-/*GERAL BACKEND*/
+/***GERAL BACKEND***/
 
 * {
   margin: 0;
@@ -39,24 +37,7 @@ body {
   align-items: center;
 }
 
-.self_left {
-  align-self: flex-start;
-  margin-left: 5%;
-}
-
-hr {
-  border-color: lightgrey;
-  width: 90%;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  margin-left: auto;
-  margin-right: auto;
-  border-width: 2px;
-}
-
-/*FIM GERAL BACKEND*/
-
-/*TOP BAR BACKEND*/
+/*****TOP BAR BACKEND*****/
 
 #top-bar {
   z-index: 2;
@@ -78,7 +59,7 @@ hr {
   height: 100%;
 }
 
-/* SESSION BOX BACKEND */
+/*******SESSION BOX BACKEND*******/
 
 .session-box-backend {
   color: #ffffff;
@@ -134,11 +115,11 @@ hr {
   padding: 5px;
 }
 
-/* FIM SESSION BOX BACKEND */
+/*******FIM SESSION BOX BACKEND*******/
 
-/*FIM TOP BAR BACKEND*/
+/*****FIM TOP BAR BACKEND*****/
 
-/*NAV BACKEND*/
+/*****NAV BACKEND*****/
 
 .nav-backend {
   z-index: 1;
@@ -167,11 +148,14 @@ hr {
   text-decoration: underline;
 }
 
-/*FIM NAV BACKEND*/
+/*****FIM NAV BACKEND*****/
 
-/* ADMIN */
+.self_left {
+  align-self: flex-start;
+  margin-left: 5%;
+}
 
-.container-admin {
+.container-backend {
   position: absolute;
   top: 120px;
   width: 100%;
@@ -180,16 +164,16 @@ hr {
   align-items: center;
 }
 
-.container-admin>* {
+.container-backend>* {
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-.container-admin>*:first-child {
+.container-backend>*:first-child {
   margin-top: 20px;
 }
 
-.open-manager-register {
+.btn-requests {
   width: 180px;
   align-self: flex-end;
   display: flex;
@@ -206,44 +190,28 @@ hr {
   height: 44px;
 }
 
-.open-manager-register>img {
-  width: 26px;
+.box {
+  width: 90%;
+  border: 1.8px solid grey;
+  border-radius: 2px;
+  background-color: #f1f1f1;
+  padding: 10px;
 }
 
-/* FEATURES */
-
-.btn-requests-ftr {
-  width: 180px;
-  align-self: flex-end;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #ffffff;
-  font-weight: bold;
-  margin-right: 5%;
-  background-color: grey;
-  padding: 9px;
-  border: 0;
-  border-radius: 3px;
-  outline: none;
-  height: 44px;
+.slide-box {
+  display: none;
 }
 
-.btn-requests-ftr>img {
-  width: 26px;
-}
+/***FIM GERAL BACKEND***/
+
+/***ADMIN***/
+
+/*****FEATURES*****/
 
 .requests-feature {
-  border: 3.6px solid grey;
-  border-radius: 2px;
-  display: none;
-  padding: 4px;
-  width: 90%;
-  height: auto;
   max-height: 529px;
   overflow-x: hidden;
   overflow-y: scroll;
-  background-color: #f1f1f1;
 }
 
 .request-feature {
@@ -312,18 +280,10 @@ hr {
   align-self: center;
 }
 
-/**/
-
 .featured-immobiles {
-  border: 3.6px solid grey;
-  border-radius: 2px;
-  width: auto;
-  max-width: 90%;
-  height: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  background-color: #f1f1f1;
 }
 
 .immobile-featured {
@@ -344,7 +304,7 @@ hr {
   flex-direction: column;
 }
 
-/* FIM FEATURES */
+/*****FIM FEATURES*****/
 
 /* IMÓVEIS */
 
@@ -388,14 +348,8 @@ hr {
 
 .immobiles-tabcontent {
   margin-top: 0;
-  border: 3.6px solid grey;
-  border-radius: 2px;
-  width: 90%;
-  height: auto;
-  display: none;
   flex-wrap: wrap;
   justify-content: flex-start;
-  background-color: #f1f1f1;
 }
 
 .immobiles-tabcontent.current {
@@ -406,18 +360,9 @@ hr {
 
 /* REGISTAR GESTORES */
 
-.manager-register {
-  display: none;
-  width: 90%;
-}
-
 .manager-register form {
-  border: 3.6px solid grey;
-  border-radius: 2px;
   display: flex;
   flex-direction: column;
-  background-color: #f1f1f1;
-  padding: 20px;
 }
 
 /* FIM REGISTAR GESTORES */
@@ -425,58 +370,43 @@ hr {
 /* GESTORES */
 
 .managers {
-  border: 3.6px solid grey;
-  border-radius: 2px;
-  width: 90%;
-  height: 800px;
-  background-color: #f1f1f1;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-/* FIM GESTORES */
-
-/* FIM ADMIN*/
-
-/* GESTOR */
-
-.container-manager {
-  width: 100%;
+.manager {
   display: flex;
   flex-direction: column;
+  width: 250px;
+  height: 200px;
+  justify-content: space-around;
   align-items: center;
+  background-color: darkgrey;
+  margin: 3px;
 }
 
-.container-manager>* {
-  margin-top: 10px;
-  margin-bottom: 10px;
+.photo-manager {
+  border: 0;
+  outline: none;
+  width: 100px;
+  height: 100px;
+  background-color: grey;
+  border-radius: 50%;
 }
 
-.container-manager>*:first-child {
-  margin-top: 20px;
-}
+/*****FIM GESTORES*****/
 
-/* REGISTAR IMÓVEL */
+/***FIM ADMIN***/
 
-.immobile-register {
-  width: 90%;
-}
+/***GESTOR***/
+
+/*****REGISTAR IMÓVEL*****/
 
 .immobile-register form {
   display: flex;
   flex-direction: column;
-  background-color: grey;
-  padding: 20px;
 }
 
-/* FIM REGISTAR IMÓVEL */
+/*****FIM REGISTAR IMÓVEL*****/
 
-/* IMÓVEIS */
-
-.immobiles {
-  width: 90%;
-  height: 800px;
-  background-color: grey;
-}
-
-/* FIM IMÓVEIS */
-
-/* FIM GESTOR*/
+/***FIM GESTOR***/

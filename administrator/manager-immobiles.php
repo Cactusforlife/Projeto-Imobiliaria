@@ -24,11 +24,12 @@
     </div>
     <div class="nav-backend">
       <a href="manager-immobiles.php">Imóveis</a>
+      <a href="manager-visits.php">Visitas</a>
       <a href="manager-statistics.php">Estatisticas</a>
     </div>
-    <div class="container-manager">
-      <button type="button" class="open-immobile-register self_left" name="abrirRegistoImovel">Criar Imovel</button>
-      <div class="immobile-register">
+    <div class="container-backend">
+      <button type="button" class="btn-requests" name="abrirRegistoImovel">Criar Imovel</button>
+      <div class="immobile-register box slide-box">
         <form class="register-immobile" action="index.html" method="post">
 
           <select class="immobile-finality" name="inserirFinalidade">
@@ -104,18 +105,11 @@
           <input type="submit" name="adicionarImovel" value="Criar">
         </form>
       </div>
-      <h2 class="self_left">Pedidos para visitas</h2>
-      <div class="featured-immobiles">
-
-      </div>
-      <h2 class="self_left">Visitas marcadas</h2>
-      <div class="featured-immobiles">
-
-      </div>
-      <div class="immobiles">
-        <p>Imóveis criados</p>
+      <h2 class="self_left">Imóveis</h2>
+      <div class="immobiles box">
       </div>
     </div>
   </body>
   <script type="text/javascript" src="../js/session-backend.js"></script>
+  <script type="text/javascript" src="../js/backend.js"></script>
 </html>

@@ -28,9 +28,9 @@
       <a href="admin-managers.php">Gestores</a>
       <a href="admin-statistics.php">Estatisticas</a>
     </div>
-    <div class="container-admin">
-      <button type="button" name="pedidosDestaque" class="btn-requests-ftr self_left"><img src="../img/feature.png">Pedidos destaque(0)</button>
-      <div class="requests-feature">
+    <div class="container-backend">
+      <button type="button" name="pedidosDestaque" class="btn-requests">Pedidos destaque(0)</button>
+      <div class="requests-feature box slide-box">
         <div class="request-feature">
           <div class="thumbnail-request">
             thumbnail imovel
@@ -157,9 +157,8 @@
         </div>
 
       </div>
-      <hr>
       <h2 class="self_left">Imóveis Destacados</h2>
-      <div class="featured-immobiles">
+      <div class="featured-immobiles box">
         <div class="immobile-featured">
           <div class="thumbnail-feature">
             thumbnail imovel

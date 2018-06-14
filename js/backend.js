@@ -1,11 +1,7 @@
 $(document).ready(function() {
 
-  $('.btn-requests-ftr').click(function() {
-    $('.requests-feature').slideToggle(500);
-  });
-
-  $('.open-manager-register').click(function() {
-    $('.manager-register').slideToggle(500);
+  $('.btn-requests').click(function() {
+    $('.slide-box').slideToggle(500);
   });
 
   $('.btns-tab').click(function() {
