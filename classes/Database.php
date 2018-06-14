@@ -1,6 +1,6 @@
 <?php
 
-Abstract class Database extends PDO {
+  class Database extends PDO {
 	
 	#atributos de configuração
 	private $driver;
@@ -33,7 +33,7 @@ Abstract class Database extends PDO {
 
 		# criar a ligacao a BD
 		try{
-			$this->conn = new PDO($dsn, $this->user, $this->password);
+			 $db = $this->conn = new PDO($dsn, $this->user, $this->password);
 		}
 		catch (PDOException $e){
 			

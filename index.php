@@ -1,4 +1,10 @@
 <!DOCTYPE html>
+
+<?php require_once('classes/index.class.php'); 
+
+    $bd = new index('classes/config.ini');
+
+?>
 <html lang="pt">
 
   <head>
@@ -7,6 +13,9 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/session.js"></script>
+    <script type="text/javascript" src="js/listagem.js"></script>
 
     <title>Imobiliária Açores</title>
 
@@ -90,38 +99,70 @@
 
           <div class="island">
 
-            <select type="text" name="ilha">
+            <select type="text" name="ilha" class="selectIlha">
+
               <option name="seleccioneIlha" selected disabled>
                 Selecione a ilha
               </option>
 
+<<<<<<< HEAD
+=======
+               <?php $bd->Ilha(); ?>
+
+            
+>>>>>>> dev-alpha
               </select>
 
           </div>
 
           <div class="county">
 
-            <select type="text" name="concelho">
+            <select type="text" name="concelho" class="selectConcelho">
+
               <option name="seleccioneConcelho" selected disabled>
                 Selecione o concelho
               </option>
-              <option name="saoMiguel">
-                São Miguel
-              </option>
-              <option name="santaMaria">
-                Santa Maria
-              </option>
+
+              <?php 
+              
+              if(isset($_POST['ilha'])) { //if i have this post
+
+              $ilha = $_POST['ilha']; // print it
+
+              $bd->Concelho($ilha);
+              
+              }
+              
+              ?>
+              
             </select>
 
           </div>
 
           <div class="parish">
 
-            <select type="text" name="freguesia">
+            <select type="text" name="freguesia" class="selectFreguesia">
               <option name="seleccioneFreguesia" selected disabled>
                 Selecione a freguesia
               </option>
 
+<<<<<<< HEAD
+=======
+
+
+              <?php
+
+              if(isset($_POST['concelho'])) { //if i have this post
+
+              $concelho = $_POST['concelho']; // print it
+
+              $bd->freguesia($concelho);
+
+              }
+              
+              ?>
+              
+>>>>>>> dev-alpha
               </select>
 
           </div>
@@ -136,6 +177,11 @@
               Selecione a sua finalidade
             </option>
 
+<<<<<<< HEAD
+=======
+            <?php $bd->finalidade(); ?>
+          
+>>>>>>> dev-alpha
           </select>
 
         </div>
@@ -156,6 +202,11 @@
               Selecione o tipo de imóvel
             </option>
 
+<<<<<<< HEAD
+=======
+            <?php $bd->TipoImovel(); ?>
+           
+>>>>>>> dev-alpha
           </select>
 
         </div>
@@ -168,6 +219,8 @@
               <option name="selecioneFinalidade" selected disabled>
                 Selecione a tipologia
               </option>
+
+              <?php $bd->Tipologia(); ?>
 
             </select>
 
@@ -207,8 +260,5 @@
     <div id="map"></div>
 
   </body>
-
-  <script type="text/javascript" src="js/main.js"></script>
-  <script type="text/javascript" src="js/session.js"></script>
 
 </html>
