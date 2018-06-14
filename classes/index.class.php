@@ -12,7 +12,6 @@ class index extends Database {
     }
 
   }
-
    public function Concelho($ilha){
 
     $sql='select * from concelho where id_ilha = :id_ilha';
@@ -65,8 +64,6 @@ class index extends Database {
     }
 
   }
-
-
 
 }
 
