@@ -29,7 +29,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
   <body>
     <div class="backend-container">
       <div class="login-backend">
-        <form class="" action="index.html" method="post">
+        <form class="" action="" method="post">
           <label for="">email</label> <input type="email" name="email">
           <label for="">password</label> <input type="password" name="password">
           <input type="submit" name="" value="login">
