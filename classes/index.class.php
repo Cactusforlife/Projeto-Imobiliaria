@@ -13,8 +13,6 @@ class index extends Database {
 
   }
 
-
-
 }
 
 ?>
