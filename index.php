@@ -18,7 +18,7 @@
     <script type="text/javascript" src="js/listagem.js"></script>
 
     <title>Imobiliária Açores</title>
-    
+
   </head>
 
   <body>
@@ -91,7 +91,10 @@
       <form class="filters-box" action="index.php" method="post">
 
         <h3>Procure imóveis</h3>
-
+        <div class="filter featured">
+          <input type="radio" name="imoveis" value="destaque" checked>destaque
+          <input type="radio" name="imoveis" value="todos">todos
+        </div>
         <div class="filter archipelago">
 
           <div class="island">
@@ -102,9 +105,12 @@
                 Selecione a ilha
               </option>
 
+<<<<<<< HEAD
                <?php $bd->Ilha(); ?>
 
             
+=======
+>>>>>>> b2ef2cf209f088f01915cc003dd74a88fb2214ed
               </select>
 
           </div>
@@ -140,6 +146,7 @@
                 Selecione a freguesia
               </option>
 
+<<<<<<< HEAD
 
 
               <?php
@@ -154,6 +161,8 @@
               
               ?>
               
+=======
+>>>>>>> b2ef2cf209f088f01915cc003dd74a88fb2214ed
               </select>
 
           </div>
@@ -168,8 +177,11 @@
               Selecione a sua finalidade
             </option>
 
+<<<<<<< HEAD
             <?php $bd->finalidade(); ?>
           
+=======
+>>>>>>> b2ef2cf209f088f01915cc003dd74a88fb2214ed
           </select>
 
         </div>
@@ -190,8 +202,11 @@
               Selecione o tipo de imóvel
             </option>
 
+<<<<<<< HEAD
             <?php $bd->TipoImovel(); ?>
            
+=======
+>>>>>>> b2ef2cf209f088f01915cc003dd74a88fb2214ed
           </select>
 
         </div>

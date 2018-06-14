@@ -1,0 +1,412 @@
+/***SISTEMA DE LOGIN BACKEND***/
+
+.backend-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-backend form {
+  background-color: #222222;
+  width: 50vw;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/***FIM SISTEMA DE LOGIN BACKEND***/
+
+/***GERAL BACKEND***/
+
+* {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/*****TOP BAR BACKEND*****/
+
+#top-bar {
+  z-index: 2;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #001942;
+  width: 100%;
+  height: 80px;
+}
+
+#top-bar>a {
+  height: 80%;
+  margin-left: 20px;
+}
+
+#top-bar img {
+  height: 100%;
+}
+
+/*******SESSION BOX BACKEND*******/
+
+.session-box-backend {
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  height: 80%;
+  margin-right: 20px;
+}
+
+.session-box-backend a {
+  color: white;
+  text-decoration: none;
+}
+
+.session-box-backend a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.session-on {
+  height: 80%;
+  font-size: 0.8em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  margin-right: 10px;
+  flex-wrap: wrap;
+}
+
+.photo-employee {
+  border: 0;
+  outline: none;
+  width: 50px;
+  height: 50px;
+  background-color: grey;
+  border-radius: 50%;
+}
+
+.session-box-backend ul {
+  display: none;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: grey;
+  position: absolute;
+  top: 70px;
+  right: 43px;
+  list-style-type: none;
+  padding: 10px;
+}
+
+.session-box-backend li {
+  padding: 5px;
+}
+
+/*******FIM SESSION BOX BACKEND*******/
+
+/*****FIM TOP BAR BACKEND*****/
+
+/*****NAV BACKEND*****/
+
+.nav-backend {
+  z-index: 1;
+  position: fixed;
+  top: 80px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  background-color: #888888;
+}
+
+.nav-backend a {
+  text-decoration: none;
+  color: white;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.nav-backend>*:first-child {
+  margin-left: 20px;
+}
+
+.nav-backend a:hover {
+  text-decoration: underline;
+}
+
+/*****FIM NAV BACKEND*****/
+
+.self_left {
+  align-self: flex-start;
+  margin-left: 5%;
+}
+
+.container-backend {
+  position: absolute;
+  top: 120px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-backend>* {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.container-backend>*:first-child {
+  margin-top: 20px;
+}
+
+.btn-requests {
+  width: 180px;
+  align-self: flex-end;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-weight: bold;
+  margin-right: 5%;
+  background-color: grey;
+  padding: 9px;
+  border: 0;
+  border-radius: 3px;
+  outline: none;
+  height: 44px;
+}
+
+.box {
+  width: 90%;
+  border: 1.8px solid grey;
+  border-radius: 2px;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+.slide-box {
+  display: none;
+}
+
+/***FIM GERAL BACKEND***/
+
+/***ADMIN***/
+
+/*****FEATURES*****/
+
+.requests-feature {
+  max-height: 529px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.request-feature {
+  display: flex;
+  align-items: center;
+  background-color: grey;
+  width: 100%;
+  height: 175px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.thumbnail-request {
+  background-color: white;
+  width: 253.5px;
+  height: 100%;
+}
+
+.photo-manager {
+  width: 58px;
+  height: 58px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.immobiles-request {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.manager-request {
+  background-color: darkgrey;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.manager-request a {
+  margin-left: 15px;
+  align-self: flex-end;
+}
+
+.immobiles-properties {
+  background-color: darkgrey;
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.request-aprove {
+  background-color: darkgrey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 253.5px;
+  height: 100%;
+}
+
+.btns-aprove {
+  margin: 15px;
+  width: 50%;
+  align-self: center;
+}
+
+.featured-immobiles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.immobile-featured {
+  width: 400px;
+  height: 400px;
+  background: darkgrey;
+  margin: 2px;
+}
+
+.thumbnail-feature {
+  width: 100%;
+  height: 200px;
+  background-color: white;
+}
+
+.properties-feature {
+  display: flex;
+  flex-direction: column;
+}
+
+/*****FIM FEATURES*****/
+
+/* IMÓVEIS */
+
+.tab-links {
+  display: flex;
+  justify-content: flex-start;
+  width: 90%;
+  margin-bottom: 0;
+}
+
+.btns-tab {
+  width: 180px;
+  align-self: flex-end;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #ffffff;
+  font-weight: bold;
+  background-color: darkgrey;
+  padding: 9px;
+  border: 0;
+  outline: none;
+  height: 44px;
+}
+
+.btns-tab.active {
+  border-top-left-radius: 3px;
+}
+
+.btns-tab.completed {
+  border-top-right-radius: 3px;
+}
+
+.btns-tab:hover {
+  background-color: grey;
+}
+
+.btns-tab.current {
+  background-color: grey;
+}
+
+.immobiles-tabcontent {
+  margin-top: 0;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.immobiles-tabcontent.current {
+  display: flex;
+}
+
+/* FIM IMÓVEIS */
+
+/* REGISTAR GESTORES */
+
+.manager-register form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* FIM REGISTAR GESTORES */
+
+/* GESTORES */
+
+.managers {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.manager {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 200px;
+  justify-content: space-around;
+  align-items: center;
+  background-color: darkgrey;
+  margin: 3px;
+}
+
+.photo-manager {
+  border: 0;
+  outline: none;
+  width: 100px;
+  height: 100px;
+  background-color: grey;
+  border-radius: 50%;
+}
+
+/*****FIM GESTORES*****/
+
+/***FIM ADMIN***/
+
+/***GESTOR***/
+
+/*****REGISTAR IMÓVEL*****/
+
+.immobile-register form {
+  display: flex;
+  flex-direction: column;
+}
+
+/*****FIM REGISTAR IMÓVEL*****/
+
+/***FIM GESTOR***/
