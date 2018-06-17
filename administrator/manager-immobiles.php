@@ -36,7 +36,7 @@
             <option name="seleccioneFinalidadeImovel" selected disabled>Selecione a finalidade</option>
           </select>
 
-          <select class="immobile-immobile-type" name="inserirTipoImovel">
+          <select class="immobile-type" name="inserirTipoImovel">
             <option name="seleccioneTipoImovelImovel" selected disabled>Selecione o tipo de imóvel</option>
           </select>
 
@@ -107,6 +107,98 @@
       </div>
       <h2 class="self_left">Imóveis</h2>
       <div class="immobiles box">
+        <div class="immobile">
+          <div class="thumbnail">
+
+          </div>
+          <div class="immobile-info">
+            <label for="">descrição</label>
+            <label for="">finalidade</label>
+            <label for="">tipo imóvel</label>
+            <label for="">ilha</label>
+            <label for="">concelho</label>
+            <label for="">freguesia</label>
+            <label for="">endereço</label>
+            <label for="">cod-postal</label>
+            <label for="">area</label>
+            <label for="">estado</label>
+            <label for="">preço</label>
+            <label for="">situação</label>
+          </div>
+          <div class="immobile-management">
+            <button>editar</button>
+            <button>eliminar</button>
+          </div>
+        </div>
+        <div class="immobile">
+          <div class="thumbnail">
+
+          </div>
+          <div class="immobile-info">
+            <label for="">descrição</label>
+            <label for="">finalidade</label>
+            <label for="">tipo imóvel</label>
+            <label for="">ilha</label>
+            <label for="">concelho</label>
+            <label for="">freguesia</label>
+            <label for="">endereço</label>
+            <label for="">cod-postal</label>
+            <label for="">area</label>
+            <label for="">estado</label>
+            <label for="">preço</label>
+            <label for="">situação</label>
+          </div>
+          <div class="immobile-management">
+            <button>editar</button>
+            <button>eliminar</button>
+          </div>
+        </div>
+        <div class="immobile">
+          <div class="thumbnail">
+
+          </div>
+          <div class="immobile-info">
+            <label for="">descrição</label>
+            <label for="">finalidade</label>
+            <label for="">tipo imóvel</label>
+            <label for="">ilha</label>
+            <label for="">concelho</label>
+            <label for="">freguesia</label>
+            <label for="">endereço</label>
+            <label for="">cod-postal</label>
+            <label for="">area</label>
+            <label for="">estado</label>
+            <label for="">preço</label>
+            <label for="">situação</label>
+          </div>
+          <div class="immobile-management">
+            <button>editar</button>
+            <button>eliminar</button>
+          </div>
+        </div>
+        <div class="immobile">
+          <div class="thumbnail">
+
+          </div>
+          <div class="immobile-info">
+            <label for="">descrição</label>
+            <label for="">finalidade</label>
+            <label for="">tipo imóvel</label>
+            <label for="">ilha</label>
+            <label for="">concelho</label>
+            <label for="">freguesia</label>
+            <label for="">endereço</label>
+            <label for="">cod-postal</label>
+            <label for="">area</label>
+            <label for="">estado</label>
+            <label for="">preço</label>
+            <label for="">situação</label>
+          </div>
+          <div class="immobile-management">
+            <button>editar</button>
+            <button>eliminar</button>
+          </div>
+        </div>
       </div>
     </div>
   </body>

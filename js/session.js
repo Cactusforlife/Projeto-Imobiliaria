@@ -17,5 +17,7 @@ $(document).ready(function() {
     $('.modal-register').fadeOut(500).css({display: 'none'});
   });
   /*FIM MODALS PARA A SESSION_BOX*/
-
+  $('.photo-user').click(function() {
+    $('.session-box-on ul').slideToggle(150);
+  });
 });

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<?php require_once('classes/index.class.php'); 
+<?php require_once('classes/index.class.php');
 
     $bd = new index('classes/config.ini');
 
@@ -83,6 +83,18 @@
         </div>
 
       </div>
+      <div class="session-box-on">
+        <div class="session-on">
+          <p>Bem-vindo, </p>
+          <p><b>utilizador x</b></p>
+        </div>
+        <button class="photo-user"></button>
+        <ul>
+          <li><a href="my-visits.php">Visitas Marcadas</a></li>
+          <li><a href="profile-settings.php">Definições de perfil</a></li>
+          <li><a href="index.php">logout</a></li>
+        </ul>
+      </div>
 
     </div>
 
@@ -105,12 +117,9 @@
                 Selecione a ilha
               </option>
 
-<<<<<<< HEAD
                <?php $bd->Ilha(); ?>
 
-            
-=======
->>>>>>> b2ef2cf209f088f01915cc003dd74a88fb2214ed
+
               </select>
 
           </div>
@@ -123,18 +132,18 @@
                 Selecione o concelho
               </option>
 
-              <?php 
-              
+              <?php
+
               if(isset($_POST['ilha'])) { //if i have this post
 
               $ilha = $_POST['ilha']; // print it
 
               $bd->Concelho($ilha);
-              
+
               }
-              
+
               ?>
-              
+
             </select>
 
           </div>
@@ -145,10 +154,6 @@
               <option name="seleccioneFreguesia" selected disabled>
                 Selecione a freguesia
               </option>
-
-<<<<<<< HEAD
-
-
               <?php
 
               if(isset($_POST['concelho'])) { //if i have this post
@@ -158,11 +163,8 @@
               $bd->freguesia($concelho);
 
               }
-              
+
               ?>
-              
-=======
->>>>>>> b2ef2cf209f088f01915cc003dd74a88fb2214ed
               </select>
 
           </div>
@@ -177,11 +179,9 @@
               Selecione a sua finalidade
             </option>
 
-<<<<<<< HEAD
             <?php $bd->finalidade(); ?>
-          
-=======
->>>>>>> b2ef2cf209f088f01915cc003dd74a88fb2214ed
+
+
           </select>
 
         </div>
@@ -202,11 +202,8 @@
               Selecione o tipo de imóvel
             </option>
 
-<<<<<<< HEAD
             <?php $bd->TipoImovel(); ?>
-           
-=======
->>>>>>> b2ef2cf209f088f01915cc003dd74a88fb2214ed
+
           </select>
 
         </div>

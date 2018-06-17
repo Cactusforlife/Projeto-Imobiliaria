@@ -36,10 +36,161 @@
       </div>
 
       <div class="immobiles-tabcontent box current" id="active">
-1
+        <div class="immobile">
+          <div class="thumbnail">
+
+          </div>
+          <div class="immobile-info">
+            <div class="manager-request">
+              <div class="photo-manager">
+
+              </div>
+              <a href="#">juliomedeiros@acorprop.com</a>
+            </div>
+            <label for="">descrição</label>
+            <label for="">finalidade</label>
+            <label for="">tipo imóvel</label>
+            <label for="">ilha</label>
+            <label for="">concelho</label>
+            <label for="">freguesia</label>
+            <label for="">endereço</label>
+            <label for="">cod-postal</label>
+            <label for="">area</label>
+            <label for="">estado</label>
+            <label for="">preço</label>
+          </div>
+          <div class="immobile-management">
+            <button>concluir</button>
+          </div>
+        </div>
+        <div class="immobile">
+          <div class="thumbnail">
+
+          </div>
+          <div class="immobile-info">
+            <div class="manager-request">
+              <div class="photo-manager">
+
+              </div>
+              <a href="#">juliomedeiros@acorprop.com</a>
+            </div>
+            <label for="">descrição</label>
+            <label for="">finalidade</label>
+            <label for="">tipo imóvel</label>
+            <label for="">ilha</label>
+            <label for="">concelho</label>
+            <label for="">freguesia</label>
+            <label for="">endereço</label>
+            <label for="">cod-postal</label>
+            <label for="">area</label>
+            <label for="">estado</label>
+            <label for="">preço</label>
+          </div>
+          <div class="immobile-management">
+            <button>concluir</button>
+          </div>
+        </div>
+        <div class="immobile">
+          <div class="thumbnail">
+
+          </div>
+          <div class="immobile-info">
+            <div class="manager-request">
+              <div class="photo-manager">
+
+              </div>
+              <a href="#">juliomedeiros@acorprop.com</a>
+            </div>
+            <label for="">descrição</label>
+            <label for="">finalidade</label>
+            <label for="">tipo imóvel</label>
+            <label for="">ilha</label>
+            <label for="">concelho</label>
+            <label for="">freguesia</label>
+            <label for="">endereço</label>
+            <label for="">cod-postal</label>
+            <label for="">area</label>
+            <label for="">estado</label>
+            <label for="">preço</label>
+          </div>
+          <div class="immobile-management">
+            <button>concluir</button>
+          </div>
+        </div>
       </div>
       <div class="immobiles-tabcontent box" id="completed">
-2
+        <div class="immobile">
+          <div class="thumbnail">
+
+          </div>
+          <div class="immobile-info">
+            <div class="manager-request">
+              <div class="photo-manager">
+
+              </div>
+              <a href="#">juliomedeiros@acorprop.com</a>
+            </div>
+            <label for="">descrição</label>
+            <label for="">finalidade</label>
+            <label for="">tipo imóvel</label>
+            <label for="">ilha</label>
+            <label for="">concelho</label>
+            <label for="">freguesia</label>
+            <label for="">endereço</label>
+            <label for="">cod-postal</label>
+            <label for="">area</label>
+            <label for="">estado</label>
+            <label for="">preço</label>
+          </div>
+        </div>
+        <div class="immobile">
+          <div class="thumbnail">
+
+          </div>
+          <div class="immobile-info">
+            <div class="manager-request">
+              <div class="photo-manager">
+
+              </div>
+              <a href="#">juliomedeiros@acorprop.com</a>
+            </div>
+            <label for="">descrição</label>
+            <label for="">finalidade</label>
+            <label for="">tipo imóvel</label>
+            <label for="">ilha</label>
+            <label for="">concelho</label>
+            <label for="">freguesia</label>
+            <label for="">endereço</label>
+            <label for="">cod-postal</label>
+            <label for="">area</label>
+            <label for="">estado</label>
+            <label for="">preço</label>
+          </div>
+        </div>
+        <div class="immobile">
+          <div class="thumbnail">
+
+          </div>
+          <div class="immobile-info">
+            <div class="manager-request">
+              <div class="photo-manager">
+
+              </div>
+              <a href="#">juliomedeiros@acorprop.com</a>
+            </div>
+            <label for="">descrição</label>
+            <label for="">finalidade</label>
+            <label for="">tipo imóvel</label>
+            <label for="">ilha</label>
+            <label for="">concelho</label>
+            <label for="">freguesia</label>
+            <label for="">endereço</label>
+            <label for="">cod-postal</label>
+            <label for="">area</label>
+            <label for="">estado</label>
+            <label for="">preço</label>
+          </div>
+        </div>
       </div>
 
     </div>

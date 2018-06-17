@@ -11,9 +11,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     $bd->Login($_POST['email'],$_POST['password']);
 		
 	}
-  
-
-
 
 ?>
 
