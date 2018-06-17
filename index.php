@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<?php require_once('classes/index.class.php'); 
+<?php require_once('classes/index.class.php');
 
     $bd = new index('classes/config.ini');
 
@@ -83,6 +83,18 @@
         </div>
 
       </div>
+      <div class="session-box-on">
+        <div class="session-on">
+          <p>Bem-vindo, </p>
+          <p><b>utilizador x</b></p>
+        </div>
+        <button class="photo-user"></button>
+        <ul>
+          <li><a href="my-visits.php">Visitas Marcadas</a></li>
+          <li><a href="profile-settings.php">Definições de perfil</a></li>
+          <li><a href="index.php">logout</a></li>
+        </ul>
+      </div>
 
     </div>
 
@@ -108,7 +120,7 @@
 <<<<<<< HEAD
                <?php $bd->Ilha(); ?>
 
-            
+
 =======
 >>>>>>> b2ef2cf209f088f01915cc003dd74a88fb2214ed
               </select>
@@ -123,18 +135,18 @@
                 Selecione o concelho
               </option>
 
-              <?php 
-              
+              <?php
+
               if(isset($_POST['ilha'])) { //if i have this post
 
               $ilha = $_POST['ilha']; // print it
 
               $bd->Concelho($ilha);
-              
+
               }
-              
+
               ?>
-              
+
             </select>
 
           </div>
@@ -158,9 +170,9 @@
               $bd->freguesia($concelho);
 
               }
-              
+
               ?>
-              
+
 =======
 >>>>>>> b2ef2cf209f088f01915cc003dd74a88fb2214ed
               </select>
@@ -179,7 +191,7 @@
 
 <<<<<<< HEAD
             <?php $bd->finalidade(); ?>
-          
+
 =======
 >>>>>>> b2ef2cf209f088f01915cc003dd74a88fb2214ed
           </select>
@@ -204,7 +216,7 @@
 
 <<<<<<< HEAD
             <?php $bd->TipoImovel(); ?>
-           
+
 =======
 >>>>>>> b2ef2cf209f088f01915cc003dd74a88fb2214ed
           </select>

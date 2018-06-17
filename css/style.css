@@ -123,6 +123,64 @@ body {
   right: 0;
 }
 
+/*****LOGGED IN*****/
+
+.session-box-on {
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  height: 80%;
+  margin-right: 20px;
+}
+
+.session-box-on a {
+  color: white;
+  text-decoration: none;
+}
+
+.session-box-on a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.session-on {
+  height: 80%;
+  font-size: 0.8em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  margin-right: 10px;
+  flex-wrap: wrap;
+}
+
+.photo-user {
+  border: 0;
+  outline: none;
+  width: 50px;
+  height: 50px;
+  background-color: grey;
+  border-radius: 50%;
+}
+
+.session-box-on ul {
+  display: none;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: grey;
+  position: absolute;
+  top: 70px;
+  right: 43px;
+  list-style-type: none;
+  padding: 10px;
+}
+
+.session-box-on li {
+  padding: 5px;
+}
+
+/*****FIM LOGGED IN*****/
+
 /*FIM SESSION BOX*/
 
 /*FIM TOP BAR*/

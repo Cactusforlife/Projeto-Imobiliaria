@@ -34,17 +34,6 @@
       </div>
       <h2 class="self_left">Visitas marcadas</h2>
       <div class="box">
-        <div class="">
-          <div class="thumbnail">
-            
-          </div>
-          <div class="">
-
-          </div>
-          <div class="requests">
-
-          </div>
-        </div>
       </div>
     </div>
   </body>
