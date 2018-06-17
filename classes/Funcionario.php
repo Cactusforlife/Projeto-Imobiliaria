@@ -1,8 +1,8 @@
 <?php
 
-include('TipoUtilizador.php');
 
-class Funcionario extends TipoUtilizador {
+
+class Funcionario {
 	
 	private $id_utilizador;
 
@@ -18,7 +18,7 @@ class Funcionario extends TipoUtilizador {
 	
 	private $contacto;
 
-	public function __construct($id_utilizador, TipoUtilizador $id_tipo ,$email,$password,$nome,$sobrenome,$contacto){
+	public function __construct($id_tipo,$email,$password,$nome,$sobrenome,$contacto){
 
 		$this->id_utilizador = $id_utilizador;
 		$this->id_tipo = $id_tipo;
@@ -71,8 +71,7 @@ class Funcionario extends TipoUtilizador {
 
 	}
 
-
-
+	
 
 	
 	

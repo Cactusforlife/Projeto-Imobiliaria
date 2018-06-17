@@ -13,12 +13,12 @@
       <div class="session-box-backend">
         <div class="session-on">
           <p>Bem-vindo, </p>
-          <p><b>Júlio Medeiros</b></p>
+          <p><b><?php $results[0]['nome'];?></b></p>
         </div>
         <button class="photo-employee"></button>
         <ul>
           <li><a href="profile-settings.php">Definições de perfil</a></li>
-          <li><a href="index.php">logout</a></li>
+          <li><a href="index.php">Logout</a></li>
         </ul>
       </div>
     </div>

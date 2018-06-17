@@ -1,3 +1,32 @@
+<?php
+
+ session_start();
+
+  include('../classes/Administration.php');
+  include('../classes/Funcionario.php');
+
+  $bd = new Administration('../classes/config.ini');
+
+  $session = $_SESSION['Administrator'];
+
+  $sql = " SELECT * From funcionario where id_tipo = $session ";
+
+  $results = $bd->query($sql);
+
+
+  if($_SERVER["REQUEST_METHOD"] == "POST") {
+  
+  $sql = " INSERT INTO funcionario (id_tipo, email, password, nome, sobrenome, contacto) VALUES (:id_tipo, :email, :password, :nome, :sobrenome, :contacto)";
+
+  $params = array('id_tipo'=> 2, 'email' => $_POST['emailGestor'], 'password' => $_POST['passwordGestor'], 'nome' => $_POST['nomeGestor'], 'sobrenome' => $_POST["sobrenomeGestor"], 'contacto' => $_POST["contactoGestor"]);
+
+  $bd->query($sql, $params);
+  
+  var_dump($params);
+  
+  }
+
+?>
 <!DOCTYPE html>
 <html lang="pt" dir="ltr">
   <head>
@@ -13,7 +42,7 @@
       <div class="session-box-backend">
         <div class="session-on">
           <p>Bem-vindo, </p>
-          <p><b>Júlio Medeiros</b></p>
+          <p><b><?php echo $results[0]['nome']; ?></b></p>
         </div>
         <button class="photo-employee"></button>
         <ul>
@@ -31,7 +60,7 @@
     <div class="container-backend">
       <button type="button" class="btn-requests" name="abrirRegistoGestor">Criar gestor</button>
       <div class="manager-register box slide-box">
-        <form class="register-manager" action="index.html" method="post">
+        <form class="register-manager" action="" method="post">
 
           <label for="emailGestor">Email</label>
           <input type="email" name="emailGestor">
@@ -56,62 +85,9 @@
       </div>
       <h2 class="self_left">Gestores</h2>
       <div class="managers box">
-        <div class="manager">
-          <div class="photo-manager">
-
-          </div>
-          <label for="">Júlio Medeiros</label>
-          <a href="#">juliomedeiros@acorprop.com</a>
-        </div>
-        <div class="manager">
-          <div class="photo-manager">
-
-          </div>
-          <label for="">Júlio Medeiros</label>
-          <a href="#">juliomedeiros@acorprop.com</a>
-        </div>
-        <div class="manager">
-          <div class="photo-manager">
-
-          </div>
-          <label for="">Júlio Medeiros</label>
-          <a href="#">juliomedeiros@acorprop.com</a>
-        </div>
-        <div class="manager">
-          <div class="photo-manager">
-
-          </div>
-          <label for="">Júlio Medeiros</label>
-          <a href="#">juliomedeiros@acorprop.com</a>
-        </div>
-        <div class="manager">
-          <div class="photo-manager">
-
-          </div>
-          <label for="">Júlio Medeiros</label>
-          <a href="#">juliomedeiros@acorprop.com</a>
-        </div>
-        <div class="manager">
-          <div class="photo-manager">
-
-          </div>
-          <label for="">Júlio Medeiros</label>
-          <a href="#">juliomedeiros@acorprop.com</a>
-        </div>
-        <div class="manager">
-          <div class="photo-manager">
-
-          </div>
-          <label for="">Júlio Medeiros</label>
-          <a href="#">juliomedeiros@acorprop.com</a>
-        </div>
-        <div class="manager">
-          <div class="photo-manager">
-
-          </div>
-          <label for="">Júlio Medeiros</label>
-          <a href="#">juliomedeiros@acorprop.com</a>
-        </div>
+      
+       <?php $bd->getAllGestores(); ?>
+        
       </div>
     </div>
   </body>

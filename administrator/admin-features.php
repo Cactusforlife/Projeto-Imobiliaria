@@ -1,3 +1,21 @@
+<?php
+
+  session_start();
+
+  include('../classes/Administration.php');
+
+  $bd = new Administration('../classes/config.ini');
+
+  $session = $_SESSION['Administrator'];
+
+  $sql = " SELECT * From funcionario where id_tipo = $session ";
+
+  $results = $bd->query($sql);
+
+  
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt" dir="ltr">
   <head>
@@ -13,12 +31,12 @@
       <div class="session-box-backend">
         <div class="session-on">
           <p>Bem-vindo, </p>
-          <p><b>Júlio Medeiros</b></p>
+          <p><b><?php echo $results[0]["nome"]; ?></b></p>
         </div>
         <button class="photo-employee"></button>
         <ul>
           <li><a href="profile-settings.php">Definições de perfil</a></li>
-          <li><a href="index.php">logout</a></li>
+          <li><a href="index.php">Logout</a></li>
         </ul>
       </div>
     </div>
