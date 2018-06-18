@@ -22,6 +22,8 @@ include('database.php');
         
         }
 
+        var_dump($results[0]["id_tipo"]);
+
         if($result[0]["id_tipo"] == 2){
 
         $_SESSION['Gestor'] = $result[0]['id_tipo'];
@@ -31,13 +33,6 @@ include('database.php');
         
     }
 
-    public function Logout(){
-
-        session_destroy();
-        header('location:index.php');
-
-
-    }
 
     public function getNome($session){
 

@@ -21,8 +21,13 @@
   $params = array('id_tipo'=> 2, 'email' => $_POST['emailGestor'], 'password' => $_POST['passwordGestor'], 'nome' => $_POST['nomeGestor'], 'sobrenome' => $_POST["sobrenomeGestor"], 'contacto' => $_POST["contactoGestor"]);
 
   $bd->query($sql, $params);
+
+  function Logout(){
+
+        session_destroy();
+
+    }
   
-  var_dump($params);
   
   }
 
@@ -47,7 +52,7 @@
         <button class="photo-employee"></button>
         <ul>
           <li><a href="profile-settings.php">Definições de perfil</a></li>
-          <li><a href="index.php">logout</a></li>
+          <li onclick ="Logout(); "><a href="index.php">Logout</a></li>
         </ul>
       </div>
     </div>

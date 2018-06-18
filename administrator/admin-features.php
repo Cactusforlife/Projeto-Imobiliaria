@@ -12,6 +12,7 @@
 
   $results = $bd->query($sql);
 
+
   
 ?>
 
@@ -36,7 +37,7 @@
         <button class="photo-employee"></button>
         <ul>
           <li><a href="profile-settings.php">Definições de perfil</a></li>
-          <li><a href="index.php">Logout</a></li>
+          <li onclick ="Logout(); "><a href="index.php">Logout</a></li>
         </ul>
       </div>
     </div>
