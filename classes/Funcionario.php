@@ -1,8 +1,14 @@
 <?php
 
+<<<<<<< HEAD
 
 
 class Funcionario {
+=======
+include('database.php');
+
+class Funcionario extends Database {
+>>>>>>> 28ee60d8cf98e190182b61522971137b110506be
 	
 	private $id_utilizador;
 
@@ -18,7 +24,11 @@ class Funcionario {
 	
 	private $contacto;
 
+<<<<<<< HEAD
 	public function __construct($id_tipo,$email,$password,$nome,$sobrenome,$contacto){
+=======
+	public function __construct($id_utilizador, $id_tipo ,$email,$password,$nome,$sobrenome,$contacto){
+>>>>>>> 28ee60d8cf98e190182b61522971137b110506be
 
 		$this->id_utilizador = $id_utilizador;
 		$this->id_tipo = $id_tipo;
@@ -27,6 +37,8 @@ class Funcionario {
 		$this->nome = $nome;
 		$this->sobrenome = $sobrenome;
 		$this->contacto = $contacto;
+
+		$db = parent::_construct('../classes/config.ini');
 
 	}
 
@@ -71,7 +83,18 @@ class Funcionario {
 
 	}
 
+<<<<<<< HEAD
 	
+=======
+	public function getSession(){
+
+		
+
+	}
+
+
+
+>>>>>>> 28ee60d8cf98e190182b61522971137b110506be
 
 	
 	

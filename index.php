@@ -165,6 +165,7 @@
               }
 
               ?>
+
               </select>
 
           </div>
@@ -180,7 +181,6 @@
             </option>
 
             <?php $bd->finalidade(); ?>
-
 
           </select>
 

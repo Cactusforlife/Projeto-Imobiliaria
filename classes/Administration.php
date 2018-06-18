@@ -14,11 +14,15 @@ include('database.php');
 
         
         $_SESSION['Administrator'] = $result[0]['id_tipo'];
+<<<<<<< HEAD
         
         header('location:admin-features.php');
 
         return $_SESSION['Administrator'];
 
+=======
+        header('location:admin-features.php');
+>>>>>>> 28ee60d8cf98e190182b61522971137b110506be
         
         }
 
@@ -45,6 +49,7 @@ include('database.php');
 
 
     }
+    
 
     public function getAllGestores(){
 
