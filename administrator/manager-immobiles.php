@@ -4,6 +4,7 @@
 
   include('../classes/Administration.php');
   include('../classes/Funcionario.php');
+  include('../classes/imovel.php');
 
   $bd = new Administration('../classes/config.ini');
 
@@ -21,6 +22,18 @@
         session_destroy();
 
     }
+
+  if ($_SERVER['REQUEST_METHOD'] == 'POST'){
+
+    $sql = " INSERT INTO utilizador (id_finalidade, id_tipo_imovel, id_freguesia, descricao, preco, area, latitude, longitude, endereco, cod_postal, situacao, id_gestor, estado ) 
+    VALUES (:id_finalidade, :id_tipo_imovel, :id_freguesia, :descricao, :preco, :area, :latitude, :longitude, :endereco, :cod_postal, :situacao, :id_gestor, :estado)";
+
+    $params = array('id_finalidade' => $_POST['finalidade'], 'id_tipo_imovel' => $_POST['inserirTipoImovel'], 'id_freguesia' => $_POST['freguesia'], 'descricao' => $_POST['descricao'], 
+              'preco' => $_POST['preco'], 'area' => $_POST['area'], 'latitude' => $_POST['latitude'], 'longitude' => $_POST['longitude'], 'endereco' => $_POST['endereco'],
+               'cod_postal' => $_POST['cod_postal'], 'situacao' => $_POST['situacao'], 'id_gestor'=> $results[0]['id_utilizador'], 'estado' => $_POST['destaque']);
+
+
+  }
 
 ?>
 <!DOCTYPE html>
@@ -55,20 +68,20 @@
     <div class="container-backend">
       <button type="button" class="btn-requests" name="abrirRegistoImovel">Criar Imovel</button>
       <div class="immobile-register box slide-box">
-        <form class="register-immobile" action="index.html" method="post">
+        <form class="register-immobile" action="" method="post">
 
           <select class="immobile-finality" name="inserirFinalidade">
-            <option name="seleccioneFinalidadeImovel" selected disabled>Selecione a finalidade</option>
+            <?php $bd->getFinalidade(); ?>
           </select>
 
           <select class="immobile-type" name="inserirTipoImovel">
-            <option name="seleccioneTipoImovelImovel" selected disabled>Selecione o tipo de imóvel</option>
+             <?php $bd->getTipoImovel(); ?>
           </select>
 
           <div class="immobile-habitation">
 
             <select class="immobile-typology" name="inserirTipologia">
-              <option name="seleccioneTTiplogiaImovel" selected disabled>Selecione a tipologia</option>
+               <?php $bd->getTipologia(); ?>
             </select>
 
             <label for="inserirWC">WC</label>
@@ -87,45 +100,43 @@
           <div class="immobile-archipelago">
 
             <select class="immobile-island" name="inserirIlha">
-              <option name="seleccioneIlhaImovel" selected disabled>Selecione a ilha</option>
+              <?php $bd->Ilha(); ?>
+            </select>              
             </select>
 
             <select class="immobile-county" name="inserirConcelho">
-              <option name="seleccioneConcelhoImovel" selected disabled>Selecione o concelho</option>
+              <?php $bd->Concelho(); ?>
             </select>
 
-            <select class="immobile-parish" name="inserirFreguesia">
-              <option name="seleccioneFreguesiaImovel" selected disabled>Selecione a freguesia</option>
+            
+                 <?php $bd->Freguesia(); ?>
             </select>
 
           </div>
 
           <label for="inserirEndereco">Endereço</label>
-          <input type="text" name="inserirEndereco">
+          <input type="text" name="endereco">
 
           <label for="inserirCodigoPostal">Código Postal</label>
-          <input type="text" name="inserirCodigoPostal">
-
-          <label for="inserirLatitude">Latitude</label>
-          <input type="number" name="inserirLatitude">
-
-          <label for="inserirLongitude">Longitude</label>
-          <input type="number" name="inserirLongitude">
+          <input type="text" name="cod_postal">
 
           <label for="inserirDescricao">Descrição</label>
-          <input type="textarea" name="inserirDescricao">
+          <input type="textarea" name="descricao">
 
           <label for="inserirArea">Area</label>
-          <input type="number" name="inserirArea">
+          <input type="number" name="area">
 
           <label for="inserirPreco">Preço</label>
-          <input type="number" name="inserirPreco">
+          <input type="number" name="preco">
 
-          <label for="inserirEstado">Estado</label>
-          <input type="text" name="inserirEstado">
+          <label for="estado">Estado</label>
+          <select class="estado" name="situacao">
+          <option value="Novo">Novo</option>
+          <option value="usado">Usado</option>
+          </select>
 
-          <input type="radio" name="proposicao" value="destaque">Propor a destaque
-          <input type="radio" name="proposicao" value="todos" checked>Não propor a destaque
+          <label for="destaque">Propor a destaque</label>
+          <input type="checkbox" name="destaque" value="destaque">
 
           <input type="submit" name="adicionarImovel" value="Criar">
         </form>

@@ -3,7 +3,7 @@ require('database.php');
 
 class index extends Database {
 
-    public function Ilha(){
+     public function Ilha(){
     
     $sql='select * from ilha';
     $ilha=$this->query($sql);
@@ -12,34 +12,30 @@ class index extends Database {
     }
 
   }
-<<<<<<< HEAD
+   public function Concelho(){
 
-=======
->>>>>>> 28ee60d8cf98e190182b61522971137b110506be
-   public function Concelho($ilha){
-
-    $sql='select * from concelho where id_ilha = :id_ilha';
-    $ilha=  array('id_ilha' => $ilha);
-    $concelho=$this->query($sql,$ilha);
+    $sql='select * from concelho';
+    $concelho=$this->query($sql);
     foreach ($concelho as $value) {
       echo("<option value=".$value['id_concelho']." id='concelho' >".utf8_encode($value['nome'])."</option>");
     }
     
   }
 
-    public function Freguesia($concelho){
+    public function Freguesia(){
 
-    $sql='select * from freguesia where id_concelho = :id_concelho';
-    $concelho=  array('id_concelho' => $concelho);
+    $sql='select * from freguesia';
     $freguesia=$this->query($sql);
-    foreach ($freguesia as $value) {
+    foreach ($freguesia as $value) {    
+
       echo("<option value=".$value['id_freguesia']." id='freguesia'>".utf8_encode($value['nome'])."</option>");
+   
     }
-    
+
   }
 
 
-  public function finalidade(){
+    public function finalidade(){
 
     $sql='select * from finalidade';
     $finalidade=$this->query($sql);
@@ -69,11 +65,22 @@ class index extends Database {
 
   }
 
-<<<<<<< HEAD
+  public function Login($email,$password){
+		
+		$sql = " SELECT * from cliente WHERE email = '$email' AND password = '$password' ";			
+		
+        $result = $this->query($sql);
+        
+        $_SESSION['Cliente'] = $result[0]['id_cliente'];
+    
+        $nome = $result[0]['nome'];
+        
+        }
+
+      
 
 
-=======
->>>>>>> 28ee60d8cf98e190182b61522971137b110506be
+
 }
 
 ?>

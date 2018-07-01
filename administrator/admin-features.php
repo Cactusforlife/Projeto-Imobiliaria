@@ -1,7 +1,6 @@
 <?php
 
   session_start();
-<<<<<<< HEAD
 
   include('../classes/Administration.php');
 
@@ -18,15 +17,6 @@
 ?>
 
 
-=======
-  include ('../classes/funcionario.php');
-  
-
-
-
-?>
-
->>>>>>> 28ee60d8cf98e190182b61522971137b110506be
 <!DOCTYPE html>
 <html lang="pt" dir="ltr">
   <head>

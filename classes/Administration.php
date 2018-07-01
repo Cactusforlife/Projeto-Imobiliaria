@@ -14,24 +14,24 @@ include('database.php');
 
         
         $_SESSION['Administrator'] = $result[0]['id_tipo'];
-<<<<<<< HEAD
         
         header('location:admin-features.php');
 
         return $_SESSION['Administrator'];
 
-=======
-        header('location:admin-features.php');
->>>>>>> 28ee60d8cf98e190182b61522971137b110506be
         
         }
 
-        var_dump($results[0]["id_tipo"]);
+        
 
-        if($result[0]["id_tipo"] == 2){
+        if($result[0]["id_tipo"] == 2){ 
 
         $_SESSION['Gestor'] = $result[0]['id_tipo'];
         header('location:manager-immobiles.php');
+
+        return $_SESSION['Gestor'];
+            
+        
 
         }
         
@@ -70,7 +70,80 @@ include('database.php');
         }
 
 
-	}
+    }
+
+    public function Ilha(){
+    
+    $sql='select * from ilha';
+    $ilha=$this->query($sql);
+    foreach ($ilha as $value) {
+      echo("<option value=".$value['id_ilha']." id='ilha' >".utf8_encode($value['nome'])."</option>");
+    }
+
+  }
+   public function Concelho(){
+
+    $sql='select * from concelho';
+    $concelho=$this->query($sql);
+    foreach ($concelho as $value) {
+      echo("<option value=".$value['id_concelho']." id='concelho' >".utf8_encode($value['nome'])."</option>");
+    }
+    
+  }
+
+    public function Freguesia(){
+
+    $sql='select * from freguesia';
+    $freguesia=$this->query($sql);
+    foreach ($freguesia as $value) {    
+
+      echo("<option name = 'freguesia' value=".$value['id_freguesia']." id='freguesia'>".utf8_encode($value['nome'])."</option>");
+   
+    }
+
+
+  }
+    
+    public function getFinalidade(){
+
+        $sql = "SELECT * FROM finalidade";
+
+        $results = $this->query($sql);
+
+        foreach($results as $value){
+
+            echo("<option name='finalidade' value=".$value['id_finalidade'].">".utf8_encode($value['finalidade'])."</option>");
+        }
+    
+    }
+
+    public function getTipoImovel(){
+
+        $sql = "SELECT * FROM tipo_imovel";
+
+        $results = $this->query($sql);
+
+        foreach($results as $value){
+
+            echo("<option name = 'tipo_imovel' value=".$value['id_tipo_imovel'].">".utf8_encode($value['tipo_imovel'])."</option>");
+        }
+    
+    }
+
+    
+    public function getTipologia(){
+
+        $sql = "SELECT * FROM tipologia";
+
+        $results = $this->query($sql);
+
+        foreach($results as $value){
+
+            echo("<option name = 'tipologia value=".$value['id_tipologia'].">".utf8_encode($value['tipologia'])."</option>");
+        }
+    
+    }
+
 
 
     }

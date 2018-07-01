@@ -28,12 +28,24 @@
 
       <div class="session-box">
 
+      <?php
 
-        <button type="button" class="open-modal-login" name="login">login</button>
+        if(isset($_SESSION['Cliente'])){
+
+
+        }else{
+
+          echo "<button type='button' class='open-modal-login' name='loginButton'>login</button>";
+
+        }
+
+
+      ?>
+        
 
         <div class="modal-login">
 
-          <form class="login" action="index.html" method="post">
+          <form class="login" action="" method="post">
             <h2>Login</h2>
 
             <span class="close-modal-login">x</span>
@@ -44,23 +56,38 @@
             <label for="loginPassword">password</label>
             <input type="password" name="loginPassword">
 
-            <input type="button" name="botaoLogin" value="login">
+            <input type="submit" name="login" value="login">
           </form>
 
         </div>
+
+        <?php
+
+          if(isset($_POST['login'])){
+            
+
+            $bd->login($_POST['loginEmail'],$_POST['loginPassword']);
+        
+
+          }
+        
+        
+        ?>
 
 
         <button type="button" class="open-modal-register" name="registo">registar</button>
 
         <div class="modal-register">
 
-          <form class="register" action="index.html" method="post">
+      
+
+          <form class="register" name="register" action="" method="post">
             <h2>Registo</h2>
 
             <span class="close-modal-register">x</span>
 
             <label for="registoEmail">e-mail</label>
-            <input type="email" name="registoEmail">
+            <input type="email" name="emailRegisto">
 
             <label for="passwordRegisto">password</label>
             <input type="password" name="passwordRegisto">
@@ -77,27 +104,115 @@
             <label for="contacto">contato</label>
             <input type="text" name="contacto">
 
-            <input type="button" name="botaoRegistar" value="registar">
+            <select type="text" name="ilha" class="selectIlha">
+
+              <option name="seleccioneIlha" selected disabled>
+                Selecione a ilha
+              </option>
+
+               <?php $bd->Ilha(); ?>
+
+
+              </select>
+
+            <select type="text" name="concelho" class="selectConcelho">
+
+              <option name="seleccioneConcelho" selected disabled>
+                Selecione o concelho
+              </option>
+
+              <?php
+
+            
+
+              $bd->Concelho();
+
+              ?>
+
+            </select>
+
+              <select type="text" name="freguesia" class="selectFreguesia">
+              <option name="seleccioneFreguesia" selected disabled>
+                Selecione a freguesia
+              </option>
+              <?php
+
+
+              $bd->freguesia();
+
+              
+              ?>
+
+              </select>
+
+            <input type="submit" name="registar" value="registar">
+
           </form>
 
         </div>
 
-      </div>
-      <div class="session-box-on">
-        <div class="session-on">
-          <p>Bem-vindo, </p>
-          <p><b>utilizador x</b></p>
-        </div>
-        <button class="photo-user"></button>
-        <ul>
-          <li><a href="my-visits.php">Visitas Marcadas</a></li>
-          <li><a href="profile-settings.php">Definições de perfil</a></li>
-          <li><a href="index.php">logout</a></li>
-        </ul>
+          <?php
+
+            if(isset($_POST['registar'])){
+
+              $sql = " INSERT INTO cliente (email, password, nome, sobrenome, contato, id_freguesia ) VALUES (:email, :password, :nome, :sobrenome, :contato, :id_freguesia)";
+
+              $params = array('email' => $_POST['emailRegisto'], 'password' => $_POST['passwordRegisto'], 'nome' => $_POST['name'], 'sobrenome' => $_POST["sobrenome"], 'contato' => $_POST["contacto"], 'id_freguesia' => $_POST["freguesia"]);
+              
+               $bd->query($sql, $params);
+
+            }
+          
+          ?>
+
       </div>
 
-    </div>
+      <?php
 
+      if(isset($_SESSION['Cliente'])){
+
+         $session = $_SESSION['Cliente'];
+
+              $sql = " SELECT * From cliente where id_cliente = $session ";
+
+              $results = $bd->query($sql);
+
+              $nome = $results[0]['nome'];
+
+              echo "
+               
+              <div class='session-box-on'>
+              <input type='submit' name='logout' value='Logout'>
+              <div class='session-on'>
+              
+              <p>Bem-vindo, </p>
+              <p><b>$nome</b></p>
+              
+             
+              
+              </div>
+              </div>
+              
+              ";
+
+             
+        }
+
+      ?> 
+
+      <?php
+
+           if(isset($_POST['logout'])){
+
+                session_destroy();
+                header('location:index.php');
+                
+              }
+
+      ?>
+       
+      
+  </div>
     <div id="filters-box">
 
       <form class="filters-box" action="index.php" method="post">
@@ -133,14 +248,10 @@
               </option>
 
               <?php
+      
 
-              if(isset($_POST['ilha'])) { //if i have this post
+              $bd->Concelho();
 
-              $ilha = $_POST['ilha']; // print it
-
-              $bd->Concelho($ilha);
-
-              }
 
               ?>
 
@@ -156,14 +267,10 @@
               </option>
               <?php
 
-              if(isset($_POST['concelho'])) { //if i have this post
 
-              $concelho = $_POST['concelho']; // print it
+              $bd->freguesia();
 
-              $bd->freguesia($concelho);
-
-              }
-
+              
               ?>
 
               </select>

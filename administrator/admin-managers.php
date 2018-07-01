@@ -20,7 +20,9 @@
 
   $params = array('id_tipo'=> 2, 'email' => $_POST['emailGestor'], 'password' => $_POST['passwordGestor'], 'nome' => $_POST['nomeGestor'], 'sobrenome' => $_POST["sobrenomeGestor"], 'contacto' => $_POST["contactoGestor"]);
 
-  $bd->query($sql, $params);
+  $results = $bd->query($sql, $params);
+
+  var_dump($results);
 
   function Logout(){
 
