@@ -232,9 +232,18 @@
                 Selecione a ilha
               </option>
 
+<<<<<<< HEAD
                <?php $bd->Ilha(); ?>
 
 
+=======
+<<<<<<< HEAD
+=======
+               <?php $bd->Ilha(); ?>
+
+            
+>>>>>>> dev-alpha
+>>>>>>> master
               </select>
 
           </div>
@@ -265,6 +274,14 @@
               <option name="seleccioneFreguesia" selected disabled>
                 Selecione a freguesia
               </option>
+<<<<<<< HEAD
+=======
+
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> master
               <?php
 
 
@@ -272,7 +289,12 @@
 
               
               ?>
+<<<<<<< HEAD
 
+=======
+              
+>>>>>>> dev-alpha
+>>>>>>> master
               </select>
 
           </div>
@@ -287,8 +309,16 @@
               Selecione a sua finalidade
             </option>
 
+<<<<<<< HEAD
             <?php $bd->finalidade(); ?>
 
+=======
+<<<<<<< HEAD
+=======
+            <?php $bd->finalidade(); ?>
+          
+>>>>>>> dev-alpha
+>>>>>>> master
           </select>
 
         </div>
@@ -309,8 +339,16 @@
               Selecione o tipo de imóvel
             </option>
 
+<<<<<<< HEAD
             <?php $bd->TipoImovel(); ?>
 
+=======
+<<<<<<< HEAD
+=======
+            <?php $bd->TipoImovel(); ?>
+           
+>>>>>>> dev-alpha
+>>>>>>> master
           </select>
 
         </div>

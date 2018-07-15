@@ -14,8 +14,16 @@ class index extends Database {
   }
    public function Concelho(){
 
+<<<<<<< HEAD
     $sql='select * from concelho';
     $concelho=$this->query($sql);
+=======
+   public function Concelho($ilha){
+
+    $sql='select * from concelho where id_ilha = :id_ilha';
+    $ilha=  array('id_ilha' => $ilha);
+    $concelho=$this->query($sql,$ilha);
+>>>>>>> master
     foreach ($concelho as $value) {
       echo("<option value=".$value['id_concelho']." id='concelho' >".utf8_encode($value['nome'])."</option>");
     }
