@@ -22,6 +22,10 @@ SET time_zone = "+00:00";
 -- Database: `imobiliariadb`
 --
 
+DROP DATABASE IF EXISTS `imobiliariadb`;
+CREATE DATABASE IF NOT EXISTS `imobiliariadb`;
+USE `imobiliariadb`;
+
 -- --------------------------------------------------------
 
 --
@@ -92,7 +96,7 @@ INSERT INTO `concelho` (`id_concelho`, `id_ilha`, `nome`, `latitude`, `longitude
 DROP TABLE IF EXISTS `destaque`;
 CREATE TABLE IF NOT EXISTS `destaque` (
   `id_imovel` int(11) NOT NULL,
-  `estado` tinyint(4) NOT NULL DEFAULT '0',
+  `estado` ENUM('0','1') NOT NULL DEFAULT '0',
   PRIMARY KEY (`id_imovel`),
   KEY `fk_Destaque_Imovel1_idx` (`id_imovel`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -391,6 +395,7 @@ CREATE TABLE IF NOT EXISTS `imagem` (
 DROP TABLE IF EXISTS `imovel`;
 CREATE TABLE IF NOT EXISTS `imovel` (
   `id_imovel` int(11) NOT NULL AUTO_INCREMENT,
+  `id_gestor` int(11) NOT NULL,
   `id_finalidade` int(11) NOT NULL,
   `id_tipo_imovel` int(11) NOT NULL,
   `id_freguesia` int(11) NOT NULL,
@@ -402,7 +407,6 @@ CREATE TABLE IF NOT EXISTS `imovel` (
   `endereco` varchar(45) NOT NULL,
   `cod_postal` varchar(45) NOT NULL,
   `situacao` enum('0','1') NOT NULL COMMENT 'estado: 0=ativo; 1=concluído',
-  `id_gestor` int(11) NOT NULL,
   `estado` enum('Novo','Usado') NOT NULL,
   PRIMARY KEY (`id_imovel`),
   KEY `fk_Imovel_Freguesia_idx` (`id_freguesia`),
